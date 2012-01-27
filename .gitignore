@@ -3,3 +3,5 @@ resources.cfg
 .cproject
 .project
 Debug/
+Ogre.log
+ogre.cfg
