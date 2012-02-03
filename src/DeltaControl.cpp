@@ -23,8 +23,7 @@ void DeltaControl::createScene(void) {
 			1000, 1000, 1, 1, true, 1, 12, 12, Ogre::Vector3::UNIT_Z);
 
 	Ogre::Entity* pPlaneEnt = mSceneMgr->createEntity("plane", "floor");
-	//pPlaneEnt->setMaterialName("Examples/GrassFloor");
-	pPlaneEnt->setMaterialName("Examples/GrassFloor");
+	pPlaneEnt->setMaterialName("floor_dark_grey");
 	pPlaneEnt->setCastShadows(false);
 	Ogre::SceneNode* floorNode = mSceneMgr->createSceneNode("floor1");
 	mSceneMgr->getRootSceneNode()->addChild(floorNode);
@@ -43,8 +42,7 @@ void DeltaControl::createScene(void) {
 			1000, 100, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
 
 	Ogre::Entity* pWall1 = mSceneMgr->createEntity("wall1", "wall1");
-	//pPlaneEnt->setMaterialName("Examples/GrassFloor");
-	pWall1->setMaterialName("Examples/GrassFloor");
+	pWall1->setMaterialName("wall_light_grey");
 	pWall1->setCastShadows(false);
 	Ogre::SceneNode* wallNode1 = mSceneMgr->createSceneNode("wall1");
 	mSceneMgr->getRootSceneNode()->addChild(wallNode1);
@@ -61,7 +59,7 @@ void DeltaControl::createScene(void) {
 			1000, 100, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
 
 	Ogre::Entity* pWall2 = mSceneMgr->createEntity("wall2", "wall2");
-	pWall2->setMaterialName("Examples/GrassFloor");
+	pWall2->setMaterialName("wall_light_grey");
 	pWall2->setCastShadows(false);
 	Ogre::SceneNode* wallNode2 = mSceneMgr->createSceneNode("wall2");
 	mSceneMgr->getRootSceneNode()->addChild(wallNode2);

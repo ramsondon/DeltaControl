@@ -3,16 +3,6 @@
  Filename:    BaseApplication.cpp
  -----------------------------------------------------------------------------
 
- This source file is part of the
- ___                 __    __ _ _    _
- /___\__ _ _ __ ___  / / /\ \ (_) | _(_)
- //  // _` | '__/ _ \ \ \/  \/ / | |/ / |
- / \_// (_| | | |  __/  \  /\  /| |   <| |
- \___/ \__, |_|  \___|   \/  \/ |_|_|\_\_|
- |___/
- Tutorial Framework
- http://www.ogre3d.org/tikiwiki/
- -----------------------------------------------------------------------------
  */
 #include "BaseApplication.h"
 
@@ -56,7 +46,13 @@ bool BaseApplication::configure(void) {
 }
 //-------------------------------------------------------------------------------------
 void BaseApplication::chooseSceneManager(void) {
-	// Get the SceneManager, in this case a generic one
+	/* Get the SceneManager, in this case a generic one
+	 * ST_GENERIC - Generic scene manager (Octree if you load Plugin_OctreeSceneManager, DotScene if you load Plugin_DotSceneManager)
+	 * ST_EXTERIOR_CLOSE - old Terrain Scene Manager
+	 * ST_EXTERIOR_REAL_FAR - Paging Scene Manager
+	 * ST_INTERIOR - BSP scene manager
+	 */
+
 	mSceneMgr = mRoot->createSceneManager(Ogre::ST_GENERIC);
 }
 //-------------------------------------------------------------------------------------
@@ -65,9 +61,9 @@ void BaseApplication::createCamera(void) {
 	mCamera = mSceneMgr->createCamera("PlayerCam");
 
 	// Position it at 500 in Z direction
-	mCamera->setPosition(Ogre::Vector3(0, 35, 80));
+	mCamera->setPosition(Ogre::Vector3(0, 2000, 2000));
 	// Look back along -Z
-	mCamera->lookAt(Ogre::Vector3(0, 0, -50));
+	mCamera->lookAt(Ogre::Vector3(0, 0, -100));
 	mCamera->setNearClipDistance(5);
 
 	mCameraMan = new OgreBites::SdkCameraMan(mCamera); // create a default camera controller
