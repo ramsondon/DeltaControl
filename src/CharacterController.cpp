@@ -10,9 +10,9 @@
 using namespace Ogre;
 
 CharacterController::CharacterController(Camera* cam) {
-	//setupBody(cam->getSceneManager());
+	setupBody(cam->getSceneManager());
 	setupCamera(cam);
-	//setupAnimations();
+	setupAnimations();
 }
 
 CharacterController::~CharacterController() { }
@@ -33,8 +33,8 @@ void CharacterController::setupCamera(Camera* cam) {
 	mCameraNode->setFixedYawAxis(true);
 
 	// our model is quite small, so reduce the clipping planes
-	cam->setNearClipDistance(0.1);
-	cam->setFarClipDistance(100);
+	// cam->setNearClipDistance(0.1);
+	// cam->setFarClipDistance(100);
 	mCameraNode->attachObject(cam);
 
 	mPivotPitch = 0;

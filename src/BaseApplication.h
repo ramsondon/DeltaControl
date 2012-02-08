@@ -70,7 +70,7 @@ protected:
     Ogre::RenderWindow* mWindow;
     Ogre::String mResourcesCfg;
     Ogre::String mPluginsCfg;
-    CharacterController* mCharacterCtrl;
+    CharacterController* mCharacter;
 
     // OgreBites
     OgreBites::SdkTrayManager* mTrayMgr;
