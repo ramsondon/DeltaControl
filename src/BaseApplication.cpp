@@ -6,7 +6,6 @@
  */
 #include "BaseApplication.h"
 
-//-------------------------------------------------------------------------------------
 BaseApplication::BaseApplication(void) :
 		mRoot(0), mCamera(0), mSceneMgr(0), mWindow(0), mResourcesCfg(
 				Ogre::StringUtil::BLANK), mPluginsCfg(Ogre::StringUtil::BLANK), mTrayMgr(
@@ -16,7 +15,6 @@ BaseApplication::BaseApplication(void) :
 	mMove = false;
 }
 
-//-------------------------------------------------------------------------------------
 BaseApplication::~BaseApplication(void) {
 	if (mTrayMgr)
 		delete mTrayMgr;
@@ -29,7 +27,6 @@ BaseApplication::~BaseApplication(void) {
 	delete mRoot;
 }
 
-//-------------------------------------------------------------------------------------
 bool BaseApplication::configure(void) {
 	// Show the configuration dialog and initialise the system
 	// You can skip this and use root.restoreConfig() to load configuration
@@ -44,7 +41,7 @@ bool BaseApplication::configure(void) {
 		return false;
 	}
 }
-//-------------------------------------------------------------------------------------
+
 void BaseApplication::chooseSceneManager(void) {
 	/* Get the SceneManager, in this case a generic one
 	 * ST_GENERIC - Generic scene manager (Octree if you load Plugin_OctreeSceneManager, DotScene if you load Plugin_DotSceneManager)
@@ -55,7 +52,7 @@ void BaseApplication::chooseSceneManager(void) {
 
 	mSceneMgr = mRoot->createSceneManager(Ogre::ST_GENERIC);
 }
-//-------------------------------------------------------------------------------------
+
 void BaseApplication::createCamera(void) {
 	// Create the camera
 	mCamera = mSceneMgr->createCamera("PlayerCam");
@@ -68,7 +65,7 @@ void BaseApplication::createCamera(void) {
 
 	mCameraMan = new OgreBites::SdkCameraMan(mCamera); // create a default camera controller
 }
-//-------------------------------------------------------------------------------------
+
 void BaseApplication::createFrameListener(void) {
 	Ogre::LogManager::getSingletonPtr()->logMessage("*** Initializing OIS ***");
 	OIS::ParamList pl;
@@ -123,10 +120,10 @@ void BaseApplication::createFrameListener(void) {
 
 	mRoot->addFrameListener(this);
 }
-//-------------------------------------------------------------------------------------
+
 void BaseApplication::destroyScene(void) {
 }
-//-------------------------------------------------------------------------------------
+
 void BaseApplication::createViewports(void) {
 	// Create one viewport, entire window
 	Ogre::Viewport* vp = mWindow->addViewport(mCamera);
@@ -137,7 +134,7 @@ void BaseApplication::createViewports(void) {
 			Ogre::Real(vp->getActualWidth())
 					/ Ogre::Real(vp->getActualHeight()));
 }
-//-------------------------------------------------------------------------------------
+
 void BaseApplication::setupResources(void) {
 	// Load resource paths from config file
 	Ogre::ConfigFile cf;
@@ -159,15 +156,15 @@ void BaseApplication::setupResources(void) {
 		}
 	}
 }
-//-------------------------------------------------------------------------------------
+
 void BaseApplication::createResourceListener(void) {
 
 }
-//-------------------------------------------------------------------------------------
+
 void BaseApplication::loadResources(void) {
 	Ogre::ResourceGroupManager::getSingleton().initialiseAllResourceGroups();
 }
-//-------------------------------------------------------------------------------------
+
 void BaseApplication::go(void) {
 #ifdef _DEBUG
 	mResourcesCfg = "resources_d.cfg";
@@ -185,7 +182,7 @@ void BaseApplication::go(void) {
 	// clean up
 	destroyScene();
 }
-//-------------------------------------------------------------------------------------
+
 bool BaseApplication::setup(void) {
 	mRoot = new Ogre::Root(mPluginsCfg);
 
@@ -214,8 +211,7 @@ bool BaseApplication::setup(void) {
 
 	return true;
 }
-;
-//-------------------------------------------------------------------------------------
+
 bool BaseApplication::frameRenderingQueued(const Ogre::FrameEvent& evt) {
 	if (mWindow->isClosed())
 		return false;
@@ -266,7 +262,7 @@ bool BaseApplication::frameRenderingQueued(const Ogre::FrameEvent& evt) {
 
 	return true;
 }
-//-------------------------------------------------------------------------------------
+
 bool BaseApplication::keyPressed(const OIS::KeyEvent &arg) {
 	if (mTrayMgr->isDialogVisible())
 		return true; // don't process any more keys if dialog is up

@@ -2,6 +2,7 @@
  File:    DeltaControl.cpp
  */
 #include "DeltaControl.h"
+#include "model/Telephone.h"
 
 //-------------------------------------------------------------------------------------
 DeltaControl::DeltaControl(void) {
@@ -13,6 +14,8 @@ DeltaControl::~DeltaControl(void) {
 //-------------------------------------------------------------------------------------
 void DeltaControl::createScene(void) {
 
+	mSceneMgr->setSkyBox(true, "Examples/StormySkyBox");
+
 // Create the ground with grass on it
 	Ogre::Plane plane;
 	plane.normal = Ogre::Vector3::UNIT_Y;
@@ -20,10 +23,11 @@ void DeltaControl::createScene(void) {
 	plane.d = 0; //Plane passes through the origin i.e. plane at y = 0
 	Ogre::MeshManager::getSingleton().createPlane("floor",
 			Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, plane,
-			1000, 1000, 1, 1, true, 1, 12, 12, Ogre::Vector3::UNIT_Z);
+			FLOOR_WIDTH, FLOOR_LENGTH, 1, 1, true, 1, 12, 12,
+			Ogre::Vector3::UNIT_Z);
 
 	Ogre::Entity* pPlaneEnt = mSceneMgr->createEntity("plane", "floor");
-	pPlaneEnt->setMaterialName("floor_dark_grey");
+	pPlaneEnt->setMaterialName("floor");
 	pPlaneEnt->setCastShadows(false);
 	Ogre::SceneNode* floorNode = mSceneMgr->createSceneNode("floor1");
 	mSceneMgr->getRootSceneNode()->addChild(floorNode);
@@ -47,8 +51,7 @@ void DeltaControl::createScene(void) {
 	Ogre::SceneNode* wallNode1 = mSceneMgr->createSceneNode("wall1");
 	mSceneMgr->getRootSceneNode()->addChild(wallNode1);
 	wallNode1->attachObject(pWall1);
-	wallNode1->setPosition(0,50,500);
-
+	wallNode1->setPosition(0, 50, 500);
 
 	Ogre::Plane planeWall2;
 	planeWall2.normal = Ogre::Vector3::UNIT_Z;
@@ -64,34 +67,34 @@ void DeltaControl::createScene(void) {
 	Ogre::SceneNode* wallNode2 = mSceneMgr->createSceneNode("wall2");
 	mSceneMgr->getRootSceneNode()->addChild(wallNode2);
 	wallNode2->attachObject(pWall2);
-	wallNode2->setPosition(0,43,-500);
-	wallNode2->rotate(Ogre::Vector3(500,0,0),Ogre::Radian(45), Ogre::Node::TS_WORLD);
-
-
+	wallNode2->setPosition(0, 43, -500);
+	wallNode2->rotate(Ogre::Vector3(500, 0, 0), Ogre::Radian(45),
+			Ogre::Node::TS_WORLD);
 
 	Ogre::Plane planeWall3;
-		planeWall3.normal = Ogre::Vector3::UNIT_Z;
-		// horizontal plane with normal up in y-direction
-		planeWall3.d = 1000; //Plane passes through the origin i.e. plane at y = 0
-		Ogre::MeshManager::getSingleton().createPlane("wall3",
-				Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, planeWall3,
-				1000, 100, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
+	planeWall3.normal = Ogre::Vector3::UNIT_Z;
+	// horizontal plane with normal up in y-direction
+	planeWall3.d = 1000; //Plane passes through the origin i.e. plane at y = 0
+	Ogre::MeshManager::getSingleton().createPlane("wall3",
+			Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, planeWall3,
+			1000, 100, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
 
-		Ogre::Entity* pWall3 = mSceneMgr->createEntity("wall3", "wall3");
-		pWall3->setMaterialName("Examples/GrassFloor");
-		pWall3->setCastShadows(false);
-		Ogre::SceneNode* wallNode3 = mSceneMgr->createSceneNode("wall3");
-		mSceneMgr->getRootSceneNode()->addChild(wallNode3);
-		wallNode3->attachObject(pWall3);
-		wallNode3->setPosition(0,50,500);
-		wallNode3->rotate(Ogre::Vector3(0,0,0),Ogre::Radian(90), Ogre::Node::TS_WORLD);
-
-
+	Ogre::Entity* pWall3 = mSceneMgr->createEntity("wall3", "wall3");
+	pWall3->setMaterialName("Examples/GrassFloor");
+	pWall3->setCastShadows(false);
+	Ogre::SceneNode* wallNode3 = mSceneMgr->createSceneNode("wall3");
+	mSceneMgr->getRootSceneNode()->addChild(wallNode3);
+	wallNode3->attachObject(pWall3);
+	wallNode3->setPosition(0, 50, 500);
+	wallNode3->rotate(Ogre::Vector3(0, 0, 0), Ogre::Radian(90),
+			Ogre::Node::TS_WORLD);
 
 	/* *********************************************************
 	 * ENTITIES
 	 * *********************************************************/
 
+//	Telephone* phone = new Telephone(mSceneMgr, "phone1");
+//	phone->init();
 }
 
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
