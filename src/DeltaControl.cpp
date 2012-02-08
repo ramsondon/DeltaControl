@@ -91,25 +91,54 @@ void DeltaControl::createScene(void) {
 	wallNode2->setPosition(0, ROOM_HEIGHT/2, ROOM_LENGTH/2);
 
 
-
+	// wall glass
 	Ogre::Plane planeWall3;
 	planeWall3.normal = Ogre::Vector3::UNIT_Z;
-	// horizontal plane with normal up in y-direction
-	planeWall3.d = 0; //Plane passes through the origin i.e. plane at y = 0
-	Ogre::MeshManager::getSingleton().createPlane("wall3",
+	planeWall3.d = 0;
+	Ogre::MeshManager::getSingleton().createPlane("window",
 			Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, planeWall3,
 			ROOM_LENGTH, ROOM_HEIGHT, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
 
-	Ogre::Entity* pWall3 = mSceneMgr->createEntity("wall3", "wall3");
-	pWall3->setMaterialName("wall_light_grey");
-	pWall3->setCastShadows(false);
-	Ogre::SceneNode* wallNode3 = mSceneMgr->createSceneNode("wall3");
-	mSceneMgr->getRootSceneNode()->addChild(wallNode3);
-	wallNode3->attachObject(pWall3);
-	wallNode3->yaw(Ogre::Degree(90));
-	wallNode3->setPosition(-ROOM_WIDTH/2, ROOM_HEIGHT/2, 0);
 
 
+	Ogre::Entity* winEnt = mSceneMgr->createEntity("window", "window");
+	winEnt->setMaterialName("window");
+	Ogre::SceneNode* winNode = mSceneMgr->createSceneNode("window");
+	mSceneMgr->getRootSceneNode()->addChild(winNode);
+	winNode->attachObject(winEnt);
+	winNode->yaw(Ogre::Degree(90));
+	winNode->setPosition(-ROOM_WIDTH/2, ROOM_HEIGHT/2, 0);
+
+
+
+//	Ogre::Entity* pillar1 = mSceneMgr->createEntity("p1", "pillar");
+//	pillar1->setMaterialName("wall_light_grey");
+//	Ogre::SceneNode* pillarN1 = mSceneMgr->createSceneNode("p1");
+//	mSceneMgr->getRootSceneNode()->addChild(pillarN1);
+//	pillarN1->attachObject(pillar1);
+//	pillarN1->yaw(Ogre::Degree(90));
+//	pillarN1->setPosition(-ROOM_WIDTH/2, ROOM_HEIGHT/2, -ROOM_LENGTH/2);
+//
+//	Ogre::Entity* pillar2 = mSceneMgr->createEntity("p2", "pillar");
+//	pillar2->setMaterialName("wall_light_grey");
+//	Ogre::SceneNode* pillarN2 = mSceneMgr->createSceneNode("p2");
+//	mSceneMgr->getRootSceneNode()->addChild(pillarN2);
+//	pillarN2->attachObject(pillar2);
+//	pillarN2->yaw(Ogre::Degree(90));
+//	pillarN2->setPosition(-ROOM_WIDTH/2, ROOM_HEIGHT/2, 0);
+//
+//	Ogre::Entity* pillar3 = mSceneMgr->createEntity("p3", "pillar");
+//	pillar3->setMaterialName("wall_light_grey");
+//	Ogre::SceneNode* pillarN3 = mSceneMgr->createSceneNode("p3");
+//	mSceneMgr->getRootSceneNode()->addChild(pillarN3);
+//	pillarN3->attachObject(pillar3);
+//	pillarN3->yaw(Ogre::Degree(90));
+//	pillarN3->setPosition(-ROOM_WIDTH/2, ROOM_HEIGHT/2, ROOM_LENGTH/2);
+
+
+
+
+	// wall length
 	Ogre::Plane planeWall4;
 	planeWall4.normal = Ogre::Vector3::UNIT_Z;
 	// horizontal plane with normal up in y-direction
