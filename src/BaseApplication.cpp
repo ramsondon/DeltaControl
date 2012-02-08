@@ -68,7 +68,7 @@ void BaseApplication::createCamera(void) {
 	// mCameraMan = new OgreBites::SdkCameraMan(mCamera); // create a default camera controller
 	mCamera->setFixedYawAxis(true);
 
-	//mCharacter = new CharacterController(mCamera);
+	mCharacter = new CharacterController(mCamera);
 }
 
 void BaseApplication::createFrameListener(void) {
@@ -242,6 +242,9 @@ bool BaseApplication::frameRenderingQueued(const Ogre::FrameEvent& evt) {
 bool BaseApplication::keyPressed(const OIS::KeyEvent &arg) {
 	if (mTrayMgr->isDialogVisible())
 		return true; // don't process any more keys if dialog is up
+
+	if (arg.key == OIS::KC_ESCAPE)
+		mShutDown = true;
 
 	// inject keyPressed to character
 	mCharacter->injectKeyDown(arg);
