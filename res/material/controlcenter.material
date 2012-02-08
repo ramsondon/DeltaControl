@@ -32,6 +32,27 @@ material pillar
 	}
 }
 
+material window
+{
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+       		depth_write off
+       		
+			texture_unit
+			{
+				colour_op_ex source1 src_manual src_current 0 0 0.1
+				alpha_op_ex source1 src_manual src_current 0.3
+			}
+			ambient 0.0 0.1 0.9
+			diffuse 0.35 0.38 0.41 1.00
+			specular 0.5 0.4 0.5 
+		}
+	}
+}
+
 material wall_light_grey
 {
 	technique

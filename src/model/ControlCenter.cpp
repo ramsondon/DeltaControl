@@ -177,4 +177,5 @@ void ControlCenter::setupWindowWall()
 	pillarN3->scale(0.5, 8, 0.5);
 	pillarN3->setPosition(-ROOM_WIDTH/2+12, 0, 186);
 	pillar3->setMaterialName("pillar");
+
 }
