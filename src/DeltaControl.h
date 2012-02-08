@@ -8,8 +8,9 @@ Filename:    DeltaControl.h
 
 #include "BaseApplication.h"
 
-#define FLOOR_WIDTH 10750
-#define FLOOR_LENGTH 20490
+#define ROOM_WIDTH 	1000
+#define ROOM_LENGTH	1500
+#define ROOM_HEIGHT	350
 
 class DeltaControl : public BaseApplication
 {

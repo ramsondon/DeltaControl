@@ -2,7 +2,7 @@
  File:    DeltaControl.cpp
  */
 #include "DeltaControl.h"
-#include "model/Telephone.h"
+//#include "model/Telephone.h"
 
 //-------------------------------------------------------------------------------------
 DeltaControl::DeltaControl(void) {
@@ -23,7 +23,7 @@ void DeltaControl::createScene(void) {
 	plane.d = 0; //Plane passes through the origin i.e. plane at y = 0
 	Ogre::MeshManager::getSingleton().createPlane("floor",
 			Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, plane,
-			FLOOR_WIDTH, FLOOR_LENGTH, 1, 1, true, 1, 12, 12,
+			ROOM_WIDTH, ROOM_LENGTH, 1, 1, true, 1, 12, 12,
 			Ogre::Vector3::UNIT_Z);
 
 	Ogre::Entity* pPlaneEnt = mSceneMgr->createEntity("plane", "floor");
@@ -33,6 +33,25 @@ void DeltaControl::createScene(void) {
 	mSceneMgr->getRootSceneNode()->addChild(floorNode);
 	floorNode->attachObject(pPlaneEnt);
 
+	// Tap
+
+	Ogre::Plane planeTap;
+	planeTap.normal = Ogre::Vector3::UNIT_Y;
+	planeTap.d = 0; //Plane passes through the origin i.e. plane at y = 0
+	Ogre::MeshManager::getSingleton().createPlane("tap",
+			Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, plane,
+			ROOM_WIDTH, ROOM_LENGTH, 1, 1, true, 1, 12, 12,
+			Ogre::Vector3::UNIT_Z);
+
+	Ogre::Entity* tapEntity = mSceneMgr->createEntity("tap", "tap");
+	tapEntity->setMaterialName("wall_light_grey");
+	tapEntity->setCastShadows(false);
+	Ogre::SceneNode* tapNode = mSceneMgr->createSceneNode("tap");
+	mSceneMgr->getRootSceneNode()->addChild(tapNode);
+	tapNode->attachObject(tapEntity);
+	tapNode->pitch(Ogre::Degree(180));
+	tapNode->setPosition(0, ROOM_HEIGHT, 0);
+
 	/* *******************************************************
 	 * WALL PLANES
 	 * *******************************************************/
@@ -40,10 +59,10 @@ void DeltaControl::createScene(void) {
 	Ogre::Plane planeWall1;
 	planeWall1.normal = Ogre::Vector3::UNIT_Z;
 	// horizontal plane with normal up in y-direction
-	planeWall1.d = 1000; //Plane passes through the origin i.e. plane at y = 0
+	planeWall1.d = 0; //Plane passes through the origin i.e. plane at y = 0
 	Ogre::MeshManager::getSingleton().createPlane("wall1",
 			Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, planeWall1,
-			1000, 100, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
+			ROOM_WIDTH, ROOM_HEIGHT, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
 
 	Ogre::Entity* pWall1 = mSceneMgr->createEntity("wall1", "wall1");
 	pWall1->setMaterialName("wall_light_grey");
@@ -51,15 +70,15 @@ void DeltaControl::createScene(void) {
 	Ogre::SceneNode* wallNode1 = mSceneMgr->createSceneNode("wall1");
 	mSceneMgr->getRootSceneNode()->addChild(wallNode1);
 	wallNode1->attachObject(pWall1);
-	wallNode1->setPosition(0, 50, 500);
+	wallNode1->setPosition(0,ROOM_HEIGHT/2, -ROOM_LENGTH/2);
 
 	Ogre::Plane planeWall2;
 	planeWall2.normal = Ogre::Vector3::UNIT_Z;
 	// horizontal plane with normal up in y-direction
-	planeWall2.d = 1000; //Plane passes through the origin i.e. plane at y = 0
+	planeWall2.d = 0; //Plane passes through the origin i.e. plane at y = 0
 	Ogre::MeshManager::getSingleton().createPlane("wall2",
 			Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, planeWall2,
-			1000, 100, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
+			ROOM_WIDTH, ROOM_HEIGHT, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
 
 	Ogre::Entity* pWall2 = mSceneMgr->createEntity("wall2", "wall2");
 	pWall2->setMaterialName("wall_light_grey");
@@ -67,27 +86,47 @@ void DeltaControl::createScene(void) {
 	Ogre::SceneNode* wallNode2 = mSceneMgr->createSceneNode("wall2");
 	mSceneMgr->getRootSceneNode()->addChild(wallNode2);
 	wallNode2->attachObject(pWall2);
-	wallNode2->setPosition(0, 43, -500);
-	wallNode2->rotate(Ogre::Vector3(500, 0, 0), Ogre::Radian(45),
+	wallNode2->rotate(Ogre::Vector3(-ROOM_LENGTH/2, 0, 0), Ogre::Radian(45),
 			Ogre::Node::TS_WORLD);
+	wallNode2->setPosition(0, ROOM_HEIGHT/2, ROOM_LENGTH/2);
+
+
 
 	Ogre::Plane planeWall3;
 	planeWall3.normal = Ogre::Vector3::UNIT_Z;
 	// horizontal plane with normal up in y-direction
-	planeWall3.d = 1000; //Plane passes through the origin i.e. plane at y = 0
+	planeWall3.d = 0; //Plane passes through the origin i.e. plane at y = 0
 	Ogre::MeshManager::getSingleton().createPlane("wall3",
 			Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, planeWall3,
-			1000, 100, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
+			ROOM_LENGTH, ROOM_HEIGHT, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
 
 	Ogre::Entity* pWall3 = mSceneMgr->createEntity("wall3", "wall3");
-	pWall3->setMaterialName("Examples/GrassFloor");
+	pWall3->setMaterialName("wall_light_grey");
 	pWall3->setCastShadows(false);
 	Ogre::SceneNode* wallNode3 = mSceneMgr->createSceneNode("wall3");
 	mSceneMgr->getRootSceneNode()->addChild(wallNode3);
 	wallNode3->attachObject(pWall3);
-	wallNode3->setPosition(0, 50, 500);
-	wallNode3->rotate(Ogre::Vector3(0, 0, 0), Ogre::Radian(90),
-			Ogre::Node::TS_WORLD);
+	wallNode3->yaw(Ogre::Degree(90));
+	wallNode3->setPosition(-ROOM_WIDTH/2, ROOM_HEIGHT/2, 0);
+
+
+	Ogre::Plane planeWall4;
+	planeWall4.normal = Ogre::Vector3::UNIT_Z;
+	// horizontal plane with normal up in y-direction
+	planeWall4.d = 0; //Plane passes through the origin i.e. plane at y = 0
+	Ogre::MeshManager::getSingleton().createPlane("wall4",
+			Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, planeWall4,
+			ROOM_LENGTH, ROOM_HEIGHT, 12, 12, true, 1, 12, 12, Ogre::Vector3::UNIT_Y);
+
+	Ogre::Entity* pWall4 = mSceneMgr->createEntity("wall4", "wall4");
+	pWall4->setMaterialName("wall_light_grey");
+	pWall4->setCastShadows(false);
+	Ogre::SceneNode* wallNode4 = mSceneMgr->createSceneNode("wall4");
+	mSceneMgr->getRootSceneNode()->addChild(wallNode4);
+	wallNode4->attachObject(pWall4);
+	wallNode4->yaw(Ogre::Degree(270));
+	wallNode4->setPosition(ROOM_WIDTH/2, ROOM_HEIGHT/2, 0);
+
 
 	/* *********************************************************
 	 * ENTITIES
