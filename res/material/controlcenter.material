@@ -47,3 +47,18 @@ material wall_light_grey
 		}
 	}
 }
+
+material roof_white
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture roof.jpg
+			}
+			diffuse 0.35 0.38 0.41 1.00
+		}
+	}
+}

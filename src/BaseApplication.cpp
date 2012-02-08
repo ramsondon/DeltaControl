@@ -20,6 +20,8 @@ BaseApplication::~BaseApplication(void) {
 		delete mTrayMgr;
 	if (mCameraMan)
 		delete mCameraMan;
+	if (mCharacterCtrl)
+		delete mCharacterCtrl;
 
 	//Remove ourself as a Window listener
 	Ogre::WindowEventUtilities::removeWindowEventListener(mWindow, this);
@@ -64,6 +66,9 @@ void BaseApplication::createCamera(void) {
 	mCamera->setNearClipDistance(5);
 
 	mCameraMan = new OgreBites::SdkCameraMan(mCamera); // create a default camera controller
+	mCamera->setFixedYawAxis(true);
+
+	mCharacterCtrl = new CharacterController(mCamera);
 }
 
 void BaseApplication::createFrameListener(void) {
