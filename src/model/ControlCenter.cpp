@@ -20,7 +20,6 @@ ControlCenter::ControlCenter(Ogre::SceneManager* sceneMgr) {
 }
 
 ControlCenter::~ControlCenter() {
-	// TODO Auto-generated destructor stub
 }
 
 void ControlCenter::setup()
