@@ -15,7 +15,7 @@ DeltaControl::~DeltaControl(void) {
 //-------------------------------------------------------------------------------------
 void DeltaControl::createScene(void) {
 
-	mSceneMgr->setSkyBox(true, "Examples/MyStormySkyBox");
+	mSceneMgr->setSkyBox(true, "StormySkyBox");
 
 	ControlCenter* controlCenter = new ControlCenter(mSceneMgr);
 
