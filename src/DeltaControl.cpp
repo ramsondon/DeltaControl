@@ -107,34 +107,33 @@ void DeltaControl::createScene(void) {
 	mSceneMgr->getRootSceneNode()->addChild(winNode);
 	winNode->attachObject(winEnt);
 	winNode->yaw(Ogre::Degree(90));
-	winNode->setPosition(-ROOM_WIDTH/2, ROOM_HEIGHT/2, 0);
+	winNode->setPosition(-ROOM_WIDTH/2+1, ROOM_HEIGHT/2, 0);
 
 
 
-//	Ogre::Entity* pillar1 = mSceneMgr->createEntity("p1", "pillar");
-//	pillar1->setMaterialName("wall_light_grey");
-//	Ogre::SceneNode* pillarN1 = mSceneMgr->createSceneNode("p1");
-//	mSceneMgr->getRootSceneNode()->addChild(pillarN1);
-//	pillarN1->attachObject(pillar1);
-//	pillarN1->yaw(Ogre::Degree(90));
-//	pillarN1->setPosition(-ROOM_WIDTH/2, ROOM_HEIGHT/2, -ROOM_LENGTH/2);
-//
-//	Ogre::Entity* pillar2 = mSceneMgr->createEntity("p2", "pillar");
-//	pillar2->setMaterialName("wall_light_grey");
-//	Ogre::SceneNode* pillarN2 = mSceneMgr->createSceneNode("p2");
-//	mSceneMgr->getRootSceneNode()->addChild(pillarN2);
-//	pillarN2->attachObject(pillar2);
-//	pillarN2->yaw(Ogre::Degree(90));
-//	pillarN2->setPosition(-ROOM_WIDTH/2, ROOM_HEIGHT/2, 0);
-//
-//	Ogre::Entity* pillar3 = mSceneMgr->createEntity("p3", "pillar");
-//	pillar3->setMaterialName("wall_light_grey");
-//	Ogre::SceneNode* pillarN3 = mSceneMgr->createSceneNode("p3");
-//	mSceneMgr->getRootSceneNode()->addChild(pillarN3);
-//	pillarN3->attachObject(pillar3);
-//	pillarN3->yaw(Ogre::Degree(90));
-//	pillarN3->setPosition(-ROOM_WIDTH/2, ROOM_HEIGHT/2, ROOM_LENGTH/2);
+	Ogre::Entity* pillar1 = mSceneMgr->createEntity("p1", "Cube.mesh");
+	Ogre::SceneNode* pillarN1 = mSceneMgr->createSceneNode("p1");
+	mSceneMgr->getRootSceneNode()->addChild(pillarN1);
+	pillarN1->attachObject(pillar1);
+	pillarN1->scale(0.5, 8, 0.5);
+	pillarN1->setPosition(-ROOM_WIDTH/2+12, 0, ROOM_LENGTH/2+156);
+	pillar1->setMaterialName("pillar");
 
+	Ogre::Entity* pillar2 = mSceneMgr->createEntity("p2", "Cube.mesh");
+	Ogre::SceneNode* pillarN2 = mSceneMgr->createSceneNode("p2");
+	mSceneMgr->getRootSceneNode()->addChild(pillarN2);
+	pillarN2->attachObject(pillar2);
+	pillarN2->scale(0.5, 8, 0.5);
+	pillarN2->setPosition(-ROOM_WIDTH/2+12, 0, -(ROOM_LENGTH/2-180));
+	pillar2->setMaterialName("pillar");
+
+	Ogre::Entity* pillar3 = mSceneMgr->createEntity("p3", "Cube.mesh");
+	Ogre::SceneNode* pillarN3 = mSceneMgr->createSceneNode("p3");
+	mSceneMgr->getRootSceneNode()->addChild(pillarN3);
+	pillarN3->attachObject(pillar3);
+	pillarN3->scale(0.5, 8, 0.5);
+	pillarN3->setPosition(-ROOM_WIDTH/2+12, 0, 186);
+	pillar3->setMaterialName("pillar");
 
 
 
