@@ -23,6 +23,9 @@ Filename:    BaseApplication.h
 #include <SdkTrays.h>
 #include <SdkCameraMan.h>
 
+#include "CharacterController.h"
+
+
 class BaseApplication : public Ogre::FrameListener, public Ogre::WindowEventListener, public OIS::KeyListener, public OIS::MouseListener, OgreBites::SdkTrayListener
 {
 public:
@@ -67,6 +70,7 @@ protected:
     Ogre::RenderWindow* mWindow;
     Ogre::String mResourcesCfg;
     Ogre::String mPluginsCfg;
+    CharacterController* mCharacterCtrl;
 
     // OgreBites
     OgreBites::SdkTrayManager* mTrayMgr;

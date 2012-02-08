@@ -14,7 +14,7 @@ DeltaControl::~DeltaControl(void) {
 //-------------------------------------------------------------------------------------
 void DeltaControl::createScene(void) {
 
-	mSceneMgr->setSkyBox(true, "Examples/StormySkyBox");
+	mSceneMgr->setSkyBox(true, "Examples/MyStormySkyBox");
 
 	// Create the ground with grass on it
 	Ogre::Plane plane;
@@ -34,7 +34,6 @@ void DeltaControl::createScene(void) {
 	floorNode->attachObject(pPlaneEnt);
 
 	// Tap
-
 	Ogre::Plane planeTap;
 	planeTap.normal = Ogre::Vector3::UNIT_Y;
 	planeTap.d = 0; //Plane passes through the origin i.e. plane at y = 0
@@ -44,7 +43,7 @@ void DeltaControl::createScene(void) {
 			Ogre::Vector3::UNIT_Z);
 
 	Ogre::Entity* tapEntity = mSceneMgr->createEntity("tap", "tap");
-	tapEntity->setMaterialName("wall_light_grey");
+	tapEntity->setMaterialName("roof_white");
 	tapEntity->setCastShadows(false);
 	Ogre::SceneNode* tapNode = mSceneMgr->createSceneNode("tap");
 	mSceneMgr->getRootSceneNode()->addChild(tapNode);
@@ -134,6 +133,27 @@ void DeltaControl::createScene(void) {
 
 //	Telephone* phone = new Telephone(mSceneMgr, "phone1");
 //	phone->init();
+
+	// Create entity from mesh and attach it to a scene node.
+	Ogre::SceneNode* node = mSceneMgr->getRootSceneNode()->createChildSceneNode();
+	Ogre::Entity* ent = mSceneMgr->createEntity("Sinbad", "Sinbad.mesh");
+	node->attachObject(ent);
+	node->setPosition(0,50,0);
+	node->scale(10,10,10);
+
+	// Set animation blend mode to additive / cumulative.
+	ent->getSkeleton()->setBlendMode(Ogre::ANIMBLEND_CUMULATIVE);
+
+	// Get the two halves of the idle animation
+	Ogre::AnimationState* baseAnim = ent->getAnimationState("IdleBase");
+	Ogre::AnimationState* topAnim = ent->getAnimationState("IdleTop");
+
+	// Enable both of them and set them to loop.
+	baseAnim->setLoop(true);
+	topAnim->setLoop(true);
+	baseAnim->setEnabled(true);
+	topAnim->setEnabled(true);
+
 }
 
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
