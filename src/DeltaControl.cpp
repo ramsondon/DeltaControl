@@ -17,7 +17,7 @@ void DeltaControl::createScene(void) {
 
 	mSceneMgr->setSkyBox(true, "StormySkyBox");
 
-	ControlCenter* controlCenter = new ControlCenter(mSceneMgr);
+	mControlCenter = new ControlCenter(mSceneMgr);
 
 	/* *********************************************************
 	 * ENTITIES
