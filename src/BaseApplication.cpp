@@ -58,9 +58,9 @@ void BaseApplication::createCamera(void) {
 	mCamera = mSceneMgr->createCamera("PlayerCam");
 
 	// Position it at 500 in Z direction
-	mCamera->setPosition(Ogre::Vector3(0, 2000, 2000));
+	mCamera->setPosition(Ogre::Vector3(0, 50, 0));
 	// Look back along -Z
-	mCamera->lookAt(Ogre::Vector3(0, 0, -100));
+	mCamera->lookAt(Ogre::Vector3(0, 50, 0));
 	mCamera->setNearClipDistance(5);
 
 	mCameraMan = new OgreBites::SdkCameraMan(mCamera); // create a default camera controller
@@ -356,24 +356,27 @@ bool BaseApplication::keyReleased(const OIS::KeyEvent &arg) {
 }
 
 bool BaseApplication::mouseMoved(const OIS::MouseEvent &arg) {
-	if (mTrayMgr->injectMouseMove(arg))
+	if (mTrayMgr->injectMouseMove(arg)) {
 		return true;
+	}
 	mCameraMan->injectMouseMove(arg);
 	return true;
 }
 
 bool BaseApplication::mousePressed(const OIS::MouseEvent &arg,
 		OIS::MouseButtonID id) {
-	if (mTrayMgr->injectMouseDown(arg, id))
+	if (mTrayMgr->injectMouseDown(arg, id)) {
 		return true;
+	}
 	mCameraMan->injectMouseDown(arg, id);
 	return true;
 }
 
 bool BaseApplication::mouseReleased(const OIS::MouseEvent &arg,
 		OIS::MouseButtonID id) {
-	if (mTrayMgr->injectMouseUp(arg, id))
+	if (mTrayMgr->injectMouseUp(arg, id)) {
 		return true;
+	}
 	mCameraMan->injectMouseUp(arg, id);
 	return true;
 }

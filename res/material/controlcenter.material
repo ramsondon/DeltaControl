@@ -1,0 +1,31 @@
+// Materials for Walls and Floor
+
+material floor
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture wood.jpg
+			}
+			diffuse 0.35 0.38 0.41 1.00
+		}
+	}
+}
+
+material wall_light_grey
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture wall_light_grey.png
+			}
+			diffuse 0.35 0.38 0.41 1.00
+		}
+	}
+}

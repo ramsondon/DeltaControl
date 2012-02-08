@@ -16,7 +16,7 @@ void DeltaControl::createScene(void) {
 
 	mSceneMgr->setSkyBox(true, "Examples/StormySkyBox");
 
-// Create the ground with grass on it
+	// Create the ground with grass on it
 	Ogre::Plane plane;
 	plane.normal = Ogre::Vector3::UNIT_Y;
 	// horizontal plane with normal up in y-direction
