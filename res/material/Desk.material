@@ -1,0 +1,14 @@
+material Wood_Pine
+{
+	technique
+	{
+		pass
+		{
+			shading phong
+			ambient 0 0 0 1
+			diffuse 0.713726 0.556863 0.333333 1
+			specular 0.92549 0.972549 0.0392157 25.6
+			emissive 0 0 0
+		}
+	}
+}
