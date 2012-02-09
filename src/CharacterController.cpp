@@ -46,6 +46,7 @@ void CharacterController::setupBody(SceneManager* sceneMgr) {
 	// create main model
 	mBodyNode = sceneMgr->getRootSceneNode()->createChildSceneNode(Vector3::UNIT_Y * CHAR_HEIGHT);
 	mBodyEnt = sceneMgr->createEntity("SinbadBody", "Sinbad.mesh");
+	mBodyEnt->getSkeleton()->setBlendMode(Ogre::ANIMBLEND_CUMULATIVE);
 	mBodyNode->attachObject(mBodyEnt);
 
 	// scale to fit
@@ -79,6 +80,16 @@ void CharacterController::setupBody(SceneManager* sceneMgr) {
 
 	mKeyDirection = Vector3::ZERO;
 	mVerticalVelocity = 0;
+
+	// Get the two halves of the idle animation
+	Ogre::AnimationState* baseAnim = mBodyEnt->getAnimationState("IdleBase");
+	Ogre::AnimationState* topAnim = mBodyEnt->getAnimationState("IdleTop");
+
+	// Enable both of them and set them to loop.
+	baseAnim->setLoop(true);
+	topAnim->setLoop(true);
+	baseAnim->setEnabled(true);
+	topAnim->setEnabled(true); 
 }
 
 void CharacterController::setupAnimations() {
@@ -361,8 +372,10 @@ void CharacterController::fadeAnimations(Real deltaTime)
 
 void CharacterController::updateCamera(Real deltaTime)
 {
+	return;
+
 	// place the camera pivot roughly at the character's shoulder
-	mCameraPivot->setPosition(mBodyNode->getPosition() + Vector3::UNIT_Y * CAM_HEIGHT);
+	mCameraPivot->setPosition(mBodyNode->getPosition() + Vector3::UNIT_Y * CAM_HEIGHT - Vector3::UNIT_X * 20);
 	// move the camera smoothly to the goal
 	Vector3 goalOffset = mCameraGoal->_getDerivedPosition() - mCameraNode->getPosition();
 	mCameraNode->translate(goalOffset * deltaTime * 9.0f);
