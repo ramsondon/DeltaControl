@@ -22,10 +22,6 @@ void DeltaControl::createScene(void) {
 	mControlCenter = new ControlCenter(mSceneMgr);
 	mCharacter = new CharacterController(mCamera);
 
-	/* *********************************************************
-	 * ENTITIES
-	 * *********************************************************/
-
 	mPhone = new Telephone(mSceneMgr, "phone1");
 
 }
