@@ -23,7 +23,7 @@ void CharacterController::setupCamera(Camera* cam) {
 	mCameraPivot = cam->getSceneManager()->getRootSceneNode()->createChildSceneNode();
 	
 	// this is where the camera should be soon, and it spins around the pivot
-	mCameraGoal = mCameraPivot->createChildSceneNode(Vector3(0, 0, 15));
+	mCameraGoal = mCameraPivot->createChildSceneNode(Vector3(0, 75, 200));
 	
 	// this is where the camera actually is
 	mCameraNode = cam->getSceneManager()->getRootSceneNode()->createChildSceneNode();
