@@ -75,6 +75,7 @@ void ControlCenter::setupWalls()
 	 * WALL PLANES
 	 * *******************************************************/
 	setupWindowWall();
+	setupWoodenWalls();
 
 
 	Ogre::Plane planeWall1;
@@ -178,4 +179,14 @@ void ControlCenter::setupWindowWall()
 	pillarN3->setPosition(-ROOM_WIDTH/2+12, 0, 186);
 	pillar3->setMaterialName("pillar");
 
+}
+
+void ControlCenter::setupWoodenWalls() {
+	Ogre::Entity* wooden1 = mSceneMgr->createEntity("wooden1", "Cube.mesh");
+	Ogre::SceneNode* woodenN1 = mSceneMgr->createSceneNode("wooden1");
+	mSceneMgr->getRootSceneNode()->addChild(woodenN1);
+	woodenN1->attachObject(wooden1);
+	woodenN1->scale(0.3, 1.8, 17);
+	woodenN1->setPosition(-ROOM_WIDTH/2+8, 0, ROOM_LENGTH*7+120);
+	wooden1->setMaterialName("floor");
 }
