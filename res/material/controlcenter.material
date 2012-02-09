@@ -40,11 +40,12 @@ material window
 		{
 			scene_blend alpha_blend
        		depth_write off
-       		
+       		lightning off
 			texture_unit
 			{
 				colour_op_ex source1 src_manual src_current 0 0 0.1
 				alpha_op_ex source1 src_manual src_current 0.3
+				env_map spherical
 			}
 			ambient 0.0 0.1 0.9
 			diffuse 0.35 0.38 0.41 1.00
