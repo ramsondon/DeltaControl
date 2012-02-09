@@ -261,6 +261,7 @@ bool BaseApplication::mouseMoved(const OIS::MouseEvent &arg) {
 	if (mTrayMgr->injectMouseMove(arg)) {
 		return true;
 	}
+
 	mCharacter->injectMouseMove(arg);
 	return true;
 }

@@ -8,6 +8,7 @@ Filename:    DeltaControl.h
 
 #include "BaseApplication.h"
 #include "model/ControlCenter.h"
+#include "model/Telephone.h"
 
 #define ROOM_WIDTH 	600
 #define ROOM_LENGTH	800
@@ -17,6 +18,7 @@ class DeltaControl : public BaseApplication
 {
 private:
 	ControlCenter* mControlCenter;
+	Telephone* mPhone;
 
 public:
     DeltaControl(void);
@@ -24,6 +26,8 @@ public:
 
 protected:
     virtual void createScene(void);
+    bool frameRenderingQueued(const Ogre::FrameEvent& evt);
+
 };
 
 #endif // #ifndef __DeltaControl_h_

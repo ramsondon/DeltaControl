@@ -3,8 +3,8 @@
  */
 #include "DeltaControl.h"
 #include "model/ControlCenter.h"
-#include "model/Terrain.h"
-//#include "model/Telephone.h"
+//#include "model/Terrain.h"
+#include "model/Telephone.h"
 
 //-------------------------------------------------------------------------------------
 DeltaControl::DeltaControl(void) {
@@ -18,15 +18,30 @@ void DeltaControl::createScene(void) {
 
 	mSceneMgr->setSkyBox(true, "StormySkyBox");
 
-	Terrain* terrain = new Terrain(mSceneMgr);
+	//Terrain* terrain = new Terrain(mSceneMgr);
 	mControlCenter = new ControlCenter(mSceneMgr);
+
+
+
+
 	/* *********************************************************
 	 * ENTITIES
 	 * *********************************************************/
 
-//	Telephone* phone = new Telephone(mSceneMgr, "phone1");
-//	phone->init();
+	mPhone = new Telephone(mSceneMgr, "phone1");
+
 }
+
+bool DeltaControl::frameRenderingQueued(const Ogre::FrameEvent& evt)
+{
+
+	bool ret = BaseApplication::frameRenderingQueued(evt);
+	mPhone->highlight(mPhone->canUse(mCharacter));
+
+
+	return ret;
+}
+
 
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
 #define WIN32_LEAN_AND_MEAN

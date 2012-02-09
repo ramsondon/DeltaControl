@@ -451,4 +451,19 @@ void CharacterController::setTopAnimation(AnimID id, bool reset)
 	}
 }
 
+const Ogre::Vector3 & CharacterController::getPosition(void)
+{
+	return mBodyNode->getPosition();
+}
+
+const Ogre::Vector3 & CharacterController::getDirection()
+{
+	return mBodyNode->getAutoTrackLocalDirection();
+}
+
+const Ogre::AxisAlignedBox& CharacterController::getBoundingBox()
+{
+	return mBodyEnt->getBoundingBox();
+}
+
 
