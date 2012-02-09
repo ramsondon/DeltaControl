@@ -21,17 +21,18 @@ CharacterController::~CharacterController() { }
 void CharacterController::setupCamera(Camera* cam) {
 	// create a pivot at roughly the character's shoulder
 	mCameraPivot = cam->getSceneManager()->getRootSceneNode()->createChildSceneNode();
+	
 	// this is where the camera should be soon, and it spins around the pivot
 	mCameraGoal = mCameraPivot->createChildSceneNode(Vector3(0, 0, 15));
+	
 	// this is where the camera actually is
 	mCameraNode = cam->getSceneManager()->getRootSceneNode()->createChildSceneNode();
-	mCameraNode->setPosition(
-			mCameraPivot->getPosition() + mCameraGoal->getPosition());
+	mCameraNode->setPosition(mCameraPivot->getPosition() + mCameraGoal->getPosition());
 
 	mCameraPivot->setFixedYawAxis(true);
 	mCameraGoal->setFixedYawAxis(true);
 	mCameraNode->setFixedYawAxis(true);
-
+	
 	// our model is quite small, so reduce the clipping planes
 	// cam->setNearClipDistance(0.1);
 	// cam->setFarClipDistance(100);
@@ -46,6 +47,10 @@ void CharacterController::setupBody(SceneManager* sceneMgr) {
 	mBodyNode = sceneMgr->getRootSceneNode()->createChildSceneNode(Vector3::UNIT_Y * CHAR_HEIGHT);
 	mBodyEnt = sceneMgr->createEntity("SinbadBody", "Sinbad.mesh");
 	mBodyNode->attachObject(mBodyEnt);
+
+	// scale to fit
+	mBodyNode->scale(CHAR_SCALE_X, CHAR_SCALE_Y, CHAR_SCALE_Z);
+
 
 	// create swords and attach to sheath
 	mSword1 = sceneMgr->createEntity("SinbadSword1", "Sword.mesh");
@@ -118,25 +123,6 @@ void CharacterController::injectKeyDown(const OIS::KeyEvent& evt)
 		// take swords out (or put them back, since it's the same animation but reversed)
 		setTopAnimation(ANIM_DRAW_SWORDS, true);
 		mTimer = 0;
-	}
-	else if (evt.key == OIS::KC_E && !mSwordsDrawn)
-	{
-		if (mTopAnimID == ANIM_IDLE_TOP || mTopAnimID == ANIM_RUN_TOP)
-		{
-			// start dancing
-			setBaseAnimation(ANIM_DANCE, true);
-			setTopAnimation(ANIM_NONE);
-			// disable hand animation because the dance controls hands
-			mAnims[ANIM_HANDS_RELAXED]->setEnabled(false);
-		}
-		else if (mBaseAnimID == ANIM_DANCE)
-		{
-			// stop dancing
-			setBaseAnimation(ANIM_IDLE_BASE);
-			setTopAnimation(ANIM_IDLE_TOP);
-			// re-enable hand animation
-			mAnims[ANIM_HANDS_RELAXED]->setEnabled(true);
-		}
 	}
 
 	// keep track of the player's intended direction
