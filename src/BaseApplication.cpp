@@ -67,8 +67,6 @@ void BaseApplication::createCamera(void) {
 
 	// mCameraMan = new OgreBites::SdkCameraMan(mCamera); // create a default camera controller
 	mCamera->setFixedYawAxis(true);
-
-	mCharacter = new CharacterController(mCamera);
 }
 
 void BaseApplication::createFrameListener(void) {

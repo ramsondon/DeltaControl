@@ -3,8 +3,8 @@
  */
 #include "DeltaControl.h"
 #include "model/ControlCenter.h"
-//#include "model/Terrain.h"
 #include "model/Telephone.h"
+
 
 //-------------------------------------------------------------------------------------
 DeltaControl::DeltaControl(void) {
@@ -18,11 +18,9 @@ void DeltaControl::createScene(void) {
 
 	mSceneMgr->setSkyBox(true, "StormySkyBox");
 
-	//Terrain* terrain = new Terrain(mSceneMgr);
+	// Terrain* terrain = new Terrain(mSceneMgr);
 	mControlCenter = new ControlCenter(mSceneMgr);
-
-
-
+	mCharacter = new CharacterController(mCamera);
 
 	/* *********************************************************
 	 * ENTITIES
