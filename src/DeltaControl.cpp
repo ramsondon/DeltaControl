@@ -3,6 +3,7 @@
  */
 #include "DeltaControl.h"
 #include "model/ControlCenter.h"
+#include "model/Terrain.h"
 //#include "model/Telephone.h"
 
 //-------------------------------------------------------------------------------------
@@ -17,35 +18,14 @@ void DeltaControl::createScene(void) {
 
 	mSceneMgr->setSkyBox(true, "StormySkyBox");
 
+	Terrain* terrain = new Terrain(mSceneMgr);
 	mControlCenter = new ControlCenter(mSceneMgr);
-
 	/* *********************************************************
 	 * ENTITIES
 	 * *********************************************************/
 
 //	Telephone* phone = new Telephone(mSceneMgr, "phone1");
 //	phone->init();
-
-	// Create entity from mesh and attach it to a scene node.
-	Ogre::SceneNode* node = mSceneMgr->getRootSceneNode()->createChildSceneNode();
-	Ogre::Entity* ent = mSceneMgr->createEntity("Sinbad", "Sinbad.mesh");
-	node->attachObject(ent);
-	node->setPosition(0,50,0);
-	node->scale(10,10,10);
-
-	// Set animation blend mode to additive / cumulative.
-	ent->getSkeleton()->setBlendMode(Ogre::ANIMBLEND_CUMULATIVE);
-
-	// Get the two halves of the idle animation
-	Ogre::AnimationState* baseAnim = ent->getAnimationState("IdleBase");
-	Ogre::AnimationState* topAnim = ent->getAnimationState("IdleTop");
-
-	// Enable both of them and set them to loop.
-	baseAnim->setLoop(true);
-	topAnim->setLoop(true);
-	baseAnim->setEnabled(true);
-	topAnim->setEnabled(true);
-
 }
 
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
