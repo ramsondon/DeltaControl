@@ -9,6 +9,7 @@
 #define CHARACTERCONTROLLER_H_
 
 #include <Ogre.h>
+#include <OgreVector3.h>
 #include <OgreCamera.h>
 #include <OIS.h>
 
@@ -78,6 +79,10 @@ public:
 	void injectMouseMove(const OIS::MouseEvent& evt);
 	void injectKeyUp(const OIS::KeyEvent& evt);
 	void injectKeyDown(const OIS::KeyEvent& evt);
+
+	const Ogre::Vector3 & getPosition(void);
+	const Ogre::Vector3 & getDirection();
+	const Ogre::AxisAlignedBox & getBoundingBox();
 
 private:
 	void setupAnimations();

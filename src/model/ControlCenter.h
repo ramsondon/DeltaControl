@@ -25,6 +25,7 @@ private:
 	void setupFloor();
 	void setupWalls();
 	void setupWindowWall();
+	void setupWoodenWalls();
 
 public:
 	ControlCenter(Ogre::SceneManager* sceneMgr);
