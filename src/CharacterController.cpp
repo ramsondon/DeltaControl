@@ -48,6 +48,7 @@ void CharacterController::setupBody(SceneManager* sceneMgr) {
 	mBodyEnt = sceneMgr->createEntity("SinbadBody", "Sinbad.mesh");
 	mBodyEnt->getSkeleton()->setBlendMode(Ogre::ANIMBLEND_CUMULATIVE);
 	mBodyNode->attachObject(mBodyEnt);
+	mMove = true;
 
 	// scale to fit
 	mBodyNode->scale(CHAR_SCALE_X, CHAR_SCALE_Y, CHAR_SCALE_Z);
@@ -195,7 +196,7 @@ void CharacterController::updateBody(Real deltaTime)
 {
 	mGoalDirection = Vector3::ZERO;   // we will calculate this
 
-	if (mKeyDirection != Vector3::ZERO && mBaseAnimID != ANIM_DANCE)
+	if (mKeyDirection != Vector3::ZERO && mBaseAnimID != ANIM_DANCE && mMove)
 	{
 		// calculate actually goal direction in world based on player's key directions
 		mGoalDirection += mKeyDirection.z * mCameraNode->getOrientation().zAxis();
@@ -447,17 +448,17 @@ void CharacterController::setTopAnimation(AnimID id, bool reset)
 	}
 }
 
-const Ogre::Vector3 & CharacterController::getPosition(void)
+const Vector3 & CharacterController::getPosition(void)
 {
 	return mBodyNode->getPosition();
 }
 
-const Ogre::Vector3 & CharacterController::getDirection()
+const Vector3 & CharacterController::getDirection()
 {
 	return mBodyNode->getAutoTrackLocalDirection();
 }
 
-const Ogre::AxisAlignedBox& CharacterController::getBoundingBox()
+const AxisAlignedBox& CharacterController::getBoundingBox()
 {
 	return mBodyEnt->getWorldBoundingBox();
 }

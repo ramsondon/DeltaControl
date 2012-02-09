@@ -4,6 +4,7 @@
 #include "DeltaControl.h"
 #include "model/ControlCenter.h"
 #include "model/Telephone.h"
+#include "model/Table.h"
 
 
 //-------------------------------------------------------------------------------------
@@ -22,6 +23,8 @@ void DeltaControl::createScene(void) {
 	mControlCenter = new ControlCenter(mSceneMgr);
 	mCharacter = new CharacterController(mCamera);
 
+	Table* table = new Table(mSceneMgr);
+
 	mPhone = new Telephone(mSceneMgr, "phone1");
 
 }
@@ -31,6 +34,8 @@ bool DeltaControl::frameRenderingQueued(const Ogre::FrameEvent& evt)
 
 	bool ret = BaseApplication::frameRenderingQueued(evt);
 	mPhone->highlight(mPhone->canUse(mCharacter));
+
+
 
 
 	return ret;

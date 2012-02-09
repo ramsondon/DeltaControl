@@ -69,6 +69,7 @@ private:
 	Vector3 mGoalDirection;     // actual intended direction in world-space
 	Real mVerticalVelocity;     // for jumping
 	Real mTimer;                // general timer to see how long animations have been playing
+	bool mMove;	// can the player move
 
 public:
 	CharacterController(Camera* cam);
@@ -80,9 +81,9 @@ public:
 	void injectKeyUp(const OIS::KeyEvent& evt);
 	void injectKeyDown(const OIS::KeyEvent& evt);
 
-	const Ogre::Vector3 & getPosition(void);
-	const Ogre::Vector3 & getDirection();
-	const Ogre::AxisAlignedBox & getBoundingBox();
+	const Vector3 & getPosition(void);
+	const Vector3 & getDirection();
+	const AxisAlignedBox & getBoundingBox();
 
 private:
 	void setupAnimations();

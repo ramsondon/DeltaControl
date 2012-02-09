@@ -19,6 +19,14 @@ class ControlCenter {
 
 private:
 	Ogre::SceneManager* mSceneMgr;
+	Ogre::Entity* mWallLeft;
+	Ogre::Entity* mWallRight;
+	Ogre::Entity* mWallBack;
+	Ogre::Entity* mWallFront;
+	Ogre::Entity* mPillarLeft;
+	Ogre::Entity* mPillarMiddle;
+	Ogre::Entity* mPillarRight;
+
 
 	void setup();
 	void setupRoof();
@@ -30,6 +38,7 @@ private:
 public:
 	ControlCenter(Ogre::SceneManager* sceneMgr);
 	virtual ~ControlCenter();
+	bool intersects(const Ogre::AxisAlignedBox & box);
 };
 
 #endif /* CONTROLCENTER_H_ */
