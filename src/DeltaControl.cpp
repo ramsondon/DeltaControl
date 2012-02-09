@@ -20,6 +20,8 @@ void DeltaControl::createScene(void) {
 
 	// Terrain* terrain = new Terrain(mSceneMgr);
 	mControlCenter = new ControlCenter(mSceneMgr);
+	mCharacter = new CharacterController(mCamera);
+
 	/* *********************************************************
 	 * ENTITIES
 	 * *********************************************************/

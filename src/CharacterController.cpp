@@ -52,7 +52,6 @@ void CharacterController::setupBody(SceneManager* sceneMgr) {
 	// scale to fit
 	mBodyNode->scale(CHAR_SCALE_X, CHAR_SCALE_Y, CHAR_SCALE_Z);
 
-
 	// create swords and attach to sheath
 	mSword1 = sceneMgr->createEntity("SinbadSword1", "Sword.mesh");
 	mSword2 = sceneMgr->createEntity("SinbadSword2", "Sword.mesh");
@@ -372,8 +371,6 @@ void CharacterController::fadeAnimations(Real deltaTime)
 
 void CharacterController::updateCamera(Real deltaTime)
 {
-	return;
-
 	// place the camera pivot roughly at the character's shoulder
 	mCameraPivot->setPosition(mBodyNode->getPosition() + Vector3::UNIT_Y * CAM_HEIGHT - Vector3::UNIT_X * 20);
 	// move the camera smoothly to the goal
