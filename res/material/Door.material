@@ -1,0 +1,24 @@
+material Default
+{
+	technique
+	{
+		pass
+		{
+			shading phong
+			ambient 0 0 0 1
+			diffuse 1 1 1 1
+			specular 0.898039 0.898039 0.898039 25.6
+			emissive 0 0 0
+
+			texture_unit
+			{
+				texture as2_wood_24.jpg
+				tex_coord_set 0
+				colour_op modulate
+				scale 1 1
+				scroll 0 0
+				rotate 0
+			}
+		}
+	}
+}
