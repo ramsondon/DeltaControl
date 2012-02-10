@@ -1,0 +1,27 @@
+material phone1
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture door.jpg
+			}
+		}
+	}
+}
+
+material phone2
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture RustySteel.jpg
+			}
+		}
+	}
+}
