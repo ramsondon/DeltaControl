@@ -62,6 +62,4 @@ void Telephone::highlight(bool highlight) {
 	} else {
 		mEntity->setMaterialName("phone2");
 	}
-
-
 }

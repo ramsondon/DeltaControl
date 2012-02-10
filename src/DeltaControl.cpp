@@ -23,8 +23,8 @@ void DeltaControl::createScene(void) {
 	mControlCenter = new ControlCenter(mSceneMgr);
 	mCharacter = new CharacterController(mCamera);
 
-	Table* table = new Table(mSceneMgr);
-
+	mTable = new Table(mSceneMgr);
+	mMonitor = new Monitor(mSceneMgr);
 	mPhone = new Telephone(mSceneMgr, "phone1");
 
 }
@@ -35,7 +35,7 @@ bool DeltaControl::frameRenderingQueued(const Ogre::FrameEvent& evt)
 	bool ret = BaseApplication::frameRenderingQueued(evt);
 	mPhone->highlight(mPhone->canUse(mCharacter));
 	//mCharacter->setMove(!mControlCenter->intersects(mCharacter->getBoundingBox()));
-
+	mMonitor->highlight(mMonitor->canUse(mCharacter));
 	return ret;
 }
 

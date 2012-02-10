@@ -11,6 +11,7 @@
 #include <OgreSceneManager.h>
 #include <OgreSceneNode.h>
 #include <OgreEntity.h>
+#include "../CharacterController.h"
 
 class Table {
 
@@ -21,7 +22,8 @@ private:
 public:
 	Table(Ogre::SceneManager* sceneMgr);
 	virtual ~Table();
-
+	bool canUseMonitor(CharacterController* character);
+	void highlight(bool highlight);
 	void setup();
 };
 
