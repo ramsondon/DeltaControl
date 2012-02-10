@@ -57,5 +57,11 @@ void Telephone::highlight(bool highlight) {
 	if ((hCur && !highlight) || (!hCur && highlight)) {
 		mSceneNode->showBoundingBox(highlight);
 	}
+	if (highlight) {
+		mEntity->setMaterialName("phone1");
+	} else {
+		mEntity->setMaterialName("phone2");
+	}
+
 
 }
