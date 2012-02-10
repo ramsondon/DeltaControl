@@ -34,9 +34,7 @@ bool DeltaControl::frameRenderingQueued(const Ogre::FrameEvent& evt)
 
 	bool ret = BaseApplication::frameRenderingQueued(evt);
 	mPhone->highlight(mPhone->canUse(mCharacter));
-
-
-
+	//mCharacter->setMove(!mControlCenter->intersects(mCharacter->getBoundingBox()));
 
 	return ret;
 }

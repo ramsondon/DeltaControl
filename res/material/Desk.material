@@ -4,11 +4,16 @@ material Wood_Pine
 	{
 		pass
 		{
-			shading phong
+			//shading phong
 			ambient 0 0 0 1
 			diffuse 0.713726 0.556863 0.333333 1
 			specular 0.92549 0.972549 0.0392157 25.6
 			emissive 0 0 0
+		}
+		
+		texture_unit {
+			texture wood.jpg 
+			colour_op_ex source1 src_manual src_current 0 0.2 0.1
 		}
 	}
 }

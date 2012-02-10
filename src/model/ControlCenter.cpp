@@ -131,6 +131,14 @@ void ControlCenter::setupWalls()
 	wallNode4->attachObject(mWallBack);
 	wallNode4->yaw(Ogre::Degree(270));
 	wallNode4->setPosition(ROOM_WIDTH/2, ROOM_HEIGHT/2, 0);
+
+//	Ogre::Entity* door = mSceneMgr->createEntity("doorback", "Door.mesh");
+//	Ogre::SceneNode* doorNode = mSceneMgr->createSceneNode("doorback");
+//	mSceneMgr->getRootSceneNode()->addChild(doorNode);
+//	doorNode->attachObject(door);
+//	doorNode->setPosition(ROOM_WIDTH/2, ROOM_HEIGHT/2, ROOM_WIDTH/2);
+//	door->setMaterialName("floor");
+
 }
 
 void ControlCenter::setupWindowWall()
@@ -182,14 +190,16 @@ void ControlCenter::setupWindowWall()
 }
 
 void ControlCenter::setupWoodenWalls() {
+
 	mWallFront = mSceneMgr->createEntity("wallfront", "Cube.mesh");
 	Ogre::SceneNode* woodenN1 = mSceneMgr->createSceneNode("wallfront");
 	mSceneMgr->getRootSceneNode()->addChild(woodenN1);
 	woodenN1->attachObject(mWallFront);
 	woodenN1->scale(0.3, 1.8, 17);
 	woodenN1->setPosition(-ROOM_WIDTH/2+8, 0, ROOM_LENGTH*7+120);
-	mWallFront->setMaterialName("floor");
+	mWallFront->setMaterialName("wall_window");
 }
+
 
 bool ControlCenter::intersects(const Ogre::AxisAlignedBox & box) {
 

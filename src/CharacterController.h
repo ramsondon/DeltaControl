@@ -70,6 +70,8 @@ private:
 	Real mVerticalVelocity;     // for jumping
 	Real mTimer;                // general timer to see how long animations have been playing
 	bool mMove;	// can the player move
+	Ogre::RaySceneQuery* mRaySceneQuery;
+	SceneManager* mSceneMgr;
 
 public:
 	CharacterController(Camera* cam);
@@ -84,6 +86,8 @@ public:
 	const Vector3 & getPosition(void);
 	const Vector3 & getDirection();
 	const AxisAlignedBox & getBoundingBox();
+	void setMove(bool move);
+	bool canMove();
 
 private:
 	void setupAnimations();

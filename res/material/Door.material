@@ -12,7 +12,7 @@ material Default
 
 			texture_unit
 			{
-				texture as2_wood_24.jpg
+				texture door.jpg
 				tex_coord_set 0
 				colour_op modulate
 				scale 1 1

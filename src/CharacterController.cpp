@@ -10,9 +10,11 @@
 using namespace Ogre;
 
 CharacterController::CharacterController(Camera* cam) {
-	setupBody(cam->getSceneManager());
+	mSceneMgr = cam->getSceneManager();
+	setupBody(mSceneMgr);
 	setupCamera(cam);
 	setupAnimations();
+	mRaySceneQuery = mSceneMgr->createRayQuery(Ogre::Ray());
 }
 
 CharacterController::~CharacterController() { }
@@ -196,11 +198,16 @@ void CharacterController::updateBody(Real deltaTime)
 {
 	mGoalDirection = Vector3::ZERO;   // we will calculate this
 
-	if (mKeyDirection != Vector3::ZERO && mBaseAnimID != ANIM_DANCE && mMove)
+	if (mKeyDirection != Vector3::ZERO && mBaseAnimID != ANIM_DANCE)
 	{
+		if (mMove) {
 		// calculate actually goal direction in world based on player's key directions
 		mGoalDirection += mKeyDirection.z * mCameraNode->getOrientation().zAxis();
 		mGoalDirection += mKeyDirection.x * mCameraNode->getOrientation().xAxis();
+		} else {
+			mGoalDirection -= mKeyDirection.z;// * mCameraNode->getOrientation().zAxis();
+			mGoalDirection -= mKeyDirection.x;// * mCameraNode->getOrientation().xAxis();
+		}
 		mGoalDirection.y = 0;
 		mGoalDirection.normalise();
 
@@ -222,6 +229,7 @@ void CharacterController::updateBody(Real deltaTime)
 		// move in current body direction (not the goal direction)
 		mBodyNode->translate(0, 0, deltaTime * RUN_SPEED * mAnims[mBaseAnimID]->getWeight(),
 			Node::TS_LOCAL);
+
 	}
 
 	if (mBaseAnimID == ANIM_JUMP_LOOP)
@@ -461,6 +469,10 @@ const Vector3 & CharacterController::getDirection()
 const AxisAlignedBox& CharacterController::getBoundingBox()
 {
 	return mBodyEnt->getWorldBoundingBox();
+}
+
+void CharacterController::setMove(bool move) {
+	mMove = move;
 }
 
 
