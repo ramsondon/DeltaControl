@@ -7,6 +7,7 @@
 //#include "model/Table.h"
 //#include "model/Monitor.h"
 #include <OgreResourceGroupManager.h>
+#include <OgreLight.h>
 
 #include "lib/DotSceneLoader.h"
 
@@ -24,18 +25,33 @@ void DeltaControl::createScene(void) {
 	mSceneMgr->setSkyBox(true, "StormySkyBox");
 
 	// Terrain* terrain = new Terrain(mSceneMgr);
-//	mControlCenter = new ControlCenter(mSceneMgr);
-//	mCharacter = new CharacterController(mCamera);
-//
+	mControlCenter = new ControlCenter(mSceneMgr);
+	mCharacter = new CharacterController(mCamera);
+
+	//mCameraMan = new OgreBites::SdkCameraMan(mCamera); //controller
+
+
 //	mTable = new Table(mSceneMgr);
 //	mMonitor = new Monitor(mSceneMgr, mCharacter);
 //	mPhone = new Telephone(mSceneMgr, mCharacter, "phone1");
 
 	DotSceneLoader* sceneLoader = new DotSceneLoader();
 	Ogre::SceneNode* roomNode = mSceneMgr->getRootSceneNode()->createChildSceneNode("room1");
-	roomNode->setPosition(0,0,0);
+	//roomNode->translate(700,0,0);
+	roomNode->yaw(Ogre::Degree(90));
+	roomNode->setPosition(650,0,200);
 	sceneLoader->parseDotScene("TCOO_Scene.scene",Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, mSceneMgr, roomNode);
 
+	mSceneMgr->setAmbientLight(Ogre::ColourValue(0.5,0.5,0.5));
+
+	Ogre::Light* pointLight = mSceneMgr->createLight("pointLight");
+	pointLight->setType(Ogre::Light::LT_POINT);
+	pointLight->setPosition(Ogre::Vector3(0, 150, 250));
+
+	pointLight->setDiffuseColour(0.95, 0.95, 0.95);
+	pointLight->setSpecularColour(0.95, 0.95, 0.95);
+
+	mSceneMgr->setShadowTechnique(Ogre::SHADOWTYPE_STENCIL_ADDITIVE);
 }
 
 bool DeltaControl::frameRenderingQueued(const Ogre::FrameEvent& evt)
