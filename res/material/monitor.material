@@ -1,0 +1,41 @@
+material monitor_highlight
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture weather.gif
+			}
+		}
+	}
+}
+
+material monitor_left
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture monitor_controlcenter.jpg
+			}
+		}
+	}
+}
+
+material monitor_right
+{
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture weather_amsterdam.jpg
+			}
+		}
+	}
+}
