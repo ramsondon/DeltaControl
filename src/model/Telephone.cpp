@@ -6,37 +6,28 @@
  */
 
 #include <OgreSceneManager.h>
-#include <OgreRay.h>
-
+#include "../CharacterController.h"
 #include "Telephone.h"
 
-Telephone::Telephone(Ogre::SceneManager* sceneMgr, CharacterController* cc, const char* name)
+Telephone::Telephone(Ogre::SceneManager* sceneMgr, CharacterController* cc)
 	: UsableObject(sceneMgr, cc) {
 
-	mRaySceneQuery = mSceneMgr->createRayQuery(Ogre::Ray());
-	mName = name;
 	setup();
 }
 
 Telephone::~Telephone() {
 }
 
+// setup must set SceneNode and Entity
 void Telephone::setup() {
-	mEntity = mSceneMgr->createEntity(mName, "Cube.mesh");
-	mSceneNode = mSceneMgr->createSceneNode(mName);
-	mSceneMgr->getRootSceneNode()->addChild(mSceneNode);
-	mSceneNode->attachObject(mEntity);
-	mSceneNode->setPosition(0,0,0);
+	mSceneNode = mSceneMgr->getSceneNode("Telefon_body");
+	mEntity = mSceneMgr->getEntity("Telefon_body");
 }
 
 void Telephone::highlight(bool highlight) {
-	bool hCur = mSceneNode->getShowBoundingBox();
-	if ((hCur && !highlight) || (!hCur && highlight)) {
-		mSceneNode->showBoundingBox(highlight);
-	}
 	if (highlight) {
 		mEntity->setMaterialName("phone1");
 	} else {
-		mEntity->setMaterialName("phone2");
+		mEntity->setMaterialName("NoMaterial");
 	}
 }

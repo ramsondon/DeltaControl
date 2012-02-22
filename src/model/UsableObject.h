@@ -27,7 +27,7 @@ public:
 	UsableObject(Ogre::SceneManager* sceneMgr, CharacterController* cController);
 	virtual ~UsableObject();
 
-	bool canUse();
+	virtual bool canUse();
 };
 
 #endif /* USABLEOBJECT_H_ */

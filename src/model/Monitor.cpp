@@ -9,45 +9,44 @@
 #include "UsableObject.h"
 #include "ControlCenter.h"
 
-Monitor::Monitor(Ogre::SceneManager* sceneMgr, CharacterController* cc)
-	: UsableObject(sceneMgr, cc) {
+Monitor::Monitor(Ogre::SceneManager* sceneMgr, CharacterController* cc) :
+		UsableObject(sceneMgr, cc) {
 	setup();
 }
 
 Monitor::~Monitor() {
 }
 
-
 void Monitor::setup() {
-	mEntity = mSceneMgr->createEntity("monitor1", "monitor.mesh");
-	mSceneNode = mSceneMgr->createSceneNode("monitor1");
-	mSceneMgr->getRootSceneNode()->addChild(mSceneNode);
-	mSceneNode->attachObject(mEntity);
-	mSceneNode->setPosition(-ROOM_WIDTH/2+48,55,-20);
-	mSceneNode->yaw(Ogre::Degree(90));
-	mSceneNode->scale(0.00003,0.00003,0.00003);
+
+	// primary monitor -> right monitor
+	mEntity = mSceneMgr->getEntity(
+			"FBXASC0504zollFBXASC045ScreenFBXASC045BildFBXASC0462");
+	mSceneNode = mSceneMgr->getSceneNode("FBXASC0504zollFBXASC045ScreenFBXASC045BildFBXASC0462");
+
+	// left monitor
+	mMonitorLeft = mSceneMgr->getEntity(
+			"FBXASC0504zollFBXASC045ScreenFBXASC045Bild");
+	mMonitorLeftSceneNode = mSceneMgr->getSceneNode("FBXASC0504zollFBXASC045ScreenFBXASC045Bild");
 
 
-	Ogre::Entity* m2ent = mSceneMgr->createEntity("monitor2", "monitor.mesh");
-	Ogre::SceneNode* m2node = mSceneMgr->createSceneNode("monitor2");
-	mSceneMgr->getRootSceneNode()->addChild(m2node);
-	m2node->attachObject(m2ent);
-	m2node->setPosition(-ROOM_WIDTH/2+60,55,-60);
-	m2node->yaw(Ogre::Degree(50));
-	m2node->scale(0.00003,0.00003,0.00003);
-
-	Ogre::Entity* m3ent = mSceneMgr->createEntity("monitor3", "monitor.mesh");
-	Ogre::SceneNode* m3node = mSceneMgr->createSceneNode("monitor3");
-	mSceneMgr->getRootSceneNode()->addChild(m3node);
-	m3node->attachObject(m3ent);
-	m3node->setPosition(-ROOM_WIDTH/2+100,55,-75);
-	m3node->yaw(Ogre::Degree(0));
-	m3node->scale(0.00003,0.00003,0.00003);
+	mEntity->setMaterialName("monitor_left");
+	mMonitorLeft->setMaterialName("monitor_right");
 }
 
 void Monitor::highlight(bool highlight) {
-	bool hCur = mSceneNode->getShowBoundingBox();
-	if ((hCur && !highlight) || (!hCur && highlight)) {
-		mSceneNode->showBoundingBox(highlight);
+	if (highlight) {
+		mEntity->setMaterialName("monitor_highlight");
+		mMonitorLeft->setMaterialName("monitor_highlight");
+	} else {
+		mEntity->setMaterialName("monitor_left");
+		mMonitorLeft->setMaterialName("monitor_right");
 	}
+}
+
+bool Monitor::canUse() {
+	if (!mEntity->getWorldBoundingBox().intersects(mCharacterController->getBoundingBox())) {
+		return 	mMonitorLeft->getWorldBoundingBox().intersects(mCharacterController->getBoundingBox());
+	}
+	return true;
 }

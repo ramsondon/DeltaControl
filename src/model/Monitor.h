@@ -13,10 +13,14 @@
 #include "UsableObject.h"
 #include "../CharacterController.h"
 
+class SceneNode;
+class Entity;
+
 class Monitor : public UsableObject {
 
 private:
-
+	Ogre::SceneNode* mMonitorLeftSceneNode;
+	Ogre::Entity* mMonitorLeft;
 	void setup();
 
 public:
@@ -24,6 +28,7 @@ public:
 	virtual ~Monitor();
 
 	void highlight(bool highlight);
+	virtual bool canUse();
 };
 
 #endif /* MONITOR_H_ */
