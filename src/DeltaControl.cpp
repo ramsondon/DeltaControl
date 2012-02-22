@@ -24,27 +24,28 @@ void DeltaControl::createScene(void) {
 	mSceneMgr->setSkyBox(true, "StormySkyBox");
 
 	// Terrain* terrain = new Terrain(mSceneMgr);
-//	mControlCenter = new ControlCenter(mSceneMgr);
+
+	mControlCenter = new ControlCenter(mSceneMgr);
 	mCharacter = new CharacterController(mCamera);
-//
-//	mTable = new Table(mSceneMgr);
+
+	//mTable = new Table(mSceneMgr);
 
 	DotSceneLoader* sceneLoader = new DotSceneLoader();
-	Ogre::SceneNode* roomNode =
-			mSceneMgr->getRootSceneNode()->createChildSceneNode("room1");
-	roomNode->setPosition(0, 0, 0);
-	sceneLoader->parseDotScene("TCOO_Scene.scene",
-			Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, mSceneMgr,
-			roomNode);
-	mSceneMgr->setAmbientLight(Ogre::ColourValue(0.8,0.8,0.8,0.2));
+	Ogre::SceneNode* roomNode = mSceneMgr->getRootSceneNode()->createChildSceneNode("room1");
+	roomNode->yaw(Ogre::Degree(90));
+	roomNode->setPosition(650,0,200);
+	sceneLoader->parseDotScene("TCOO_Scene.scene",Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, mSceneMgr, roomNode);
 
-	Ogre::Light* light = mSceneMgr->createLight("light1");
-	light->setType(Light::LT_SPOTLIGHT);
-	light->setPosition(0,0,0);
-	light->setDiffuseColour(ColourValue(0.8,0.3,0.6));
-	light->setSpotlightOuterAngle(Ogre::Degree(360));
-	roomNode->attachObject(light);
+	mSceneMgr->setAmbientLight(Ogre::ColourValue(0.5,0.5,0.5));
 
+	Ogre::Light* pointLight = mSceneMgr->createLight("pointLight");
+	pointLight->setType(Ogre::Light::LT_POINT);
+	pointLight->setPosition(Ogre::Vector3(0, 150, 250));
+
+	pointLight->setDiffuseColour(0.95, 0.95, 0.95);
+	pointLight->setSpecularColour(0.95, 0.95, 0.95);
+
+	mSceneMgr->setShadowTechnique(Ogre::SHADOWTYPE_STENCIL_ADDITIVE);
 
 	mMonitor = new Monitor(mSceneMgr, mCharacter);
 	mPhone = new Telephone(mSceneMgr, mCharacter);
