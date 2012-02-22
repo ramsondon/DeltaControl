@@ -9,25 +9,20 @@
 #define MONITOR_H_
 
 #include <OgreSceneManager.h>
-#include <OgreEntity.h>
-#include <OgreSceneNode.h>
 
+#include "UsableObject.h"
 #include "../CharacterController.h"
 
-class Monitor {
+class Monitor : public UsableObject {
 
 private:
-	Ogre::SceneManager* mSceneMgr;
-	Ogre::Entity* mEntity;
-	Ogre::SceneNode* mSceneNode;
 
 	void setup();
 
 public:
-	Monitor(Ogre::SceneManager* sceneMgr);
+	Monitor(Ogre::SceneManager* sceneMgr, CharacterController* cc);
 	virtual ~Monitor();
 
-	bool canUse(CharacterController* character);
 	void highlight(bool highlight);
 };
 

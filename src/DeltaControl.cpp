@@ -2,9 +2,13 @@
  File:    DeltaControl.cpp
  */
 #include "DeltaControl.h"
-#include "model/ControlCenter.h"
-#include "model/Telephone.h"
-#include "model/Table.h"
+//#include "model/ControlCenter.h"
+//#include "model/Telephone.h"
+//#include "model/Table.h"
+//#include "model/Monitor.h"
+#include <OgreResourceGroupManager.h>
+
+#include "lib/DotSceneLoader.h"
 
 
 //-------------------------------------------------------------------------------------
@@ -20,12 +24,17 @@ void DeltaControl::createScene(void) {
 	mSceneMgr->setSkyBox(true, "StormySkyBox");
 
 	// Terrain* terrain = new Terrain(mSceneMgr);
-	mControlCenter = new ControlCenter(mSceneMgr);
-	mCharacter = new CharacterController(mCamera);
+//	mControlCenter = new ControlCenter(mSceneMgr);
+//	mCharacter = new CharacterController(mCamera);
+//
+//	mTable = new Table(mSceneMgr);
+//	mMonitor = new Monitor(mSceneMgr, mCharacter);
+//	mPhone = new Telephone(mSceneMgr, mCharacter, "phone1");
 
-	mTable = new Table(mSceneMgr);
-	mMonitor = new Monitor(mSceneMgr);
-	mPhone = new Telephone(mSceneMgr, "phone1");
+	DotSceneLoader* sceneLoader = new DotSceneLoader();
+	Ogre::SceneNode* roomNode = mSceneMgr->getRootSceneNode()->createChildSceneNode("room1");
+	roomNode->setPosition(0,0,0);
+	sceneLoader->parseDotScene("TCOO_Scene.scene",Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, mSceneMgr, roomNode);
 
 }
 
@@ -33,9 +42,9 @@ bool DeltaControl::frameRenderingQueued(const Ogre::FrameEvent& evt)
 {
 
 	bool ret = BaseApplication::frameRenderingQueued(evt);
-	mPhone->highlight(mPhone->canUse(mCharacter));
+	//mPhone->highlight(mPhone->canUse());
 	//mCharacter->setMove(!mControlCenter->intersects(mCharacter->getBoundingBox()));
-	mMonitor->highlight(mMonitor->canUse(mCharacter));
+	//mMonitor->highlight(mMonitor->canUse());
 	return ret;
 }
 

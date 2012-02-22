@@ -6,15 +6,15 @@
  */
 
 #include "Monitor.h"
+#include "UsableObject.h"
 #include "ControlCenter.h"
 
-Monitor::Monitor(Ogre::SceneManager* sceneMgr) {
-	mSceneMgr = sceneMgr;
+Monitor::Monitor(Ogre::SceneManager* sceneMgr, CharacterController* cc)
+	: UsableObject(sceneMgr, cc) {
 	setup();
 }
 
 Monitor::~Monitor() {
-	// TODO Auto-generated destructor stub
 }
 
 
@@ -43,12 +43,6 @@ void Monitor::setup() {
 	m3node->setPosition(-ROOM_WIDTH/2+100,55,-75);
 	m3node->yaw(Ogre::Degree(0));
 	m3node->scale(0.00003,0.00003,0.00003);
-}
-
-
-bool Monitor::canUse(CharacterController* character)
-{
-	return mEntity->getWorldBoundingBox().intersects(character->getBoundingBox());
 }
 
 void Monitor::highlight(bool highlight) {

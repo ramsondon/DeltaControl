@@ -17,6 +17,8 @@ ControlCenter::ControlCenter(Ogre::SceneManager* sceneMgr) {
 
 	mSceneMgr = sceneMgr;
 	setup();
+
+
 }
 
 ControlCenter::~ControlCenter() {
@@ -131,14 +133,6 @@ void ControlCenter::setupWalls()
 	wallNode4->attachObject(mWallBack);
 	wallNode4->yaw(Ogre::Degree(270));
 	wallNode4->setPosition(ROOM_WIDTH/2, ROOM_HEIGHT/2, 0);
-
-//	Ogre::Entity* door = mSceneMgr->createEntity("doorback", "Door.mesh");
-//	Ogre::SceneNode* doorNode = mSceneMgr->createSceneNode("doorback");
-//	mSceneMgr->getRootSceneNode()->addChild(doorNode);
-//	doorNode->attachObject(door);
-//	doorNode->setPosition(ROOM_WIDTH/2, ROOM_HEIGHT/2, ROOM_WIDTH/2);
-//	door->setMaterialName("floor");
-
 }
 
 void ControlCenter::setupWindowWall()

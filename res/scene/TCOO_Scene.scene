@@ -1,0 +1,2003 @@
+<scene formatVersion="1.0" upAxis="y" unitsPerMeter="100" unitType="centimeters" minOgreVersion="1.7" ogreMaxVersion="2.4" author="OgreMax Scene Exporter (www.ogremax.com)" application="Maya">
+    <environment>
+        <colourAmbient r="0.33" g="0.33" b="0.33" />
+        <colourBackground r="0" g="0" b="0" />
+        <clipping near="0" far="100000" />
+    </environment>
+    <nodes>
+        <node name="SchreibtischFBXASC045belegt">
+            <position x="-35.9442" y="0" z="-883.096" />
+            <scale x="0.2" y="0.2" z="0.2" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <node name="Tisch">
+                <position x="0" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="TischflFBXASC195FBXASC164che1">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="TischflFBXASC195FBXASC164che1" castShadows="true" receiveShadows="true" meshFile="TischflFBXASC195FBXASC164che1.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="TischflFBXASC195FBXASC164cheFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Aufsatz">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Aufsatz" castShadows="true" receiveShadows="true" meshFile="Aufsatz.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="TischflFBXASC195FBXASC164che" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="TischFBXASC045Rahmen">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="TischFBXASC045Rahmen" castShadows="true" receiveShadows="true" meshFile="TischFBXASC045Rahmen.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="TischgestellFBXASC0462" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="RahmenFBXASC045Aufsatz">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="RahmenFBXASC045Aufsatz" castShadows="true" receiveShadows="true" meshFile="RahmenFBXASC045Aufsatz.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="phong5" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="TischfFBXASC195FBXASC188sse">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="TischfFBXASC195FBXASC188sse" castShadows="true" receiveShadows="true" meshFile="TischfFBXASC195FBXASC188sse.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StopfenFBXASC0465" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="TischbeinFBXASC045Unten">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="TischbeinFBXASC045Unten" castShadows="true" receiveShadows="true" meshFile="TischbeinFBXASC045Unten.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="phong4" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="StopfenFBXASC045Vorne">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="StopfenFBXASC045Vorne" castShadows="true" receiveShadows="true" meshFile="StopfenFBXASC045Vorne.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StopfenFBXASC0464" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="StopfenFBXASC045Hinten">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="StopfenFBXASC045Hinten" castShadows="true" receiveShadows="true" meshFile="StopfenFBXASC045Hinten.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StopfenFBXASC0463" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="HFBXASC195FBXASC188lseFBXASC046Hinten">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="HFBXASC195FBXASC188lseFBXASC046Hinten" castShadows="true" receiveShadows="true" meshFile="HFBXASC195FBXASC188lseFBXASC046Hinten.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StopfenFBXASC0462" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="StopfenFBXASC045Aufsatz">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="StopfenFBXASC045Aufsatz" castShadows="true" receiveShadows="true" meshFile="StopfenFBXASC045Aufsatz.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StopfenFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="ChromlFBXASC195FBXASC182cherFBXASC045Aufsatz">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="ChromlFBXASC195FBXASC182cherFBXASC045Aufsatz" castShadows="true" receiveShadows="true" meshFile="ChromlFBXASC195FBXASC182cherFBXASC045Aufsatz.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="TischgestellFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="RingeFBXASC045Schwarz">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="RingeFBXASC045Schwarz" castShadows="true" receiveShadows="true" meshFile="RingeFBXASC045Schwarz.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Stopfen" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="BFBXASC195FBXASC188gelFBXASC045Aufsatz">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="BFBXASC195FBXASC188gelFBXASC045Aufsatz" castShadows="true" receiveShadows="true" meshFile="BFBXASC195FBXASC188gelFBXASC045Aufsatz.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Tischgestell" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="FBXASC0504zollFBXASC045MonitorFBXASC045R">
+                <position x="0" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="FBXASC0504zollFBXASC045ScreenFBXASC045BildFBXASC0462">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC0504zollFBXASC045ScreenFBXASC045BildFBXASC0462" castShadows="true" receiveShadows="true" meshFile="FBXASC0504zollFBXASC045ScreenFBXASC045BildFBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Screen1" />
+                            <subentity index="1" materialName="NoMaterial" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="ScreenFBXASC045SockelFBXASC0462">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="ScreenFBXASC045SockelFBXASC0462" castShadows="true" receiveShadows="true" meshFile="ScreenFBXASC045SockelFBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ScreenFBXASC045RahmenFBXASC0463" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="SreenFBXASC045RahmenFBXASC0462">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="SreenFBXASC045RahmenFBXASC0462" castShadows="true" receiveShadows="true" meshFile="SreenFBXASC045RahmenFBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ScreenFBXASC045RahmenFBXASC0462" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="KnFBXASC195FBXASC182pfeFBXASC045DunkelFBXASC0462">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="KnFBXASC195FBXASC182pfeFBXASC045DunkelFBXASC0462" castShadows="true" receiveShadows="true" meshFile="KnFBXASC195FBXASC182pfeFBXASC045DunkelFBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ButtonsFBXASC045dunkelFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="KnopfFBXASC045HellFBXASC0462">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="KnopfFBXASC045HellFBXASC0462" castShadows="true" receiveShadows="true" meshFile="KnopfFBXASC045HellFBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ButtonFBXASC045HellFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="FBXASC0504zollFBXASC045MonitorFBXASC045L">
+                <position x="-280" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="FBXASC0504zollFBXASC045ScreenFBXASC045Bild">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC0504zollFBXASC045ScreenFBXASC045Bild" castShadows="true" receiveShadows="true" meshFile="FBXASC0504zollFBXASC045ScreenFBXASC045Bild.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Screen0" />
+                            <subentity index="1" materialName="NoMaterial" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="ScreenFBXASC045Sockel">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="ScreenFBXASC045Sockel" castShadows="true" receiveShadows="true" meshFile="ScreenFBXASC045Sockel.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ScreenFBXASC045RahmenFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="SreenFBXASC045Rahmen">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="SreenFBXASC045Rahmen" castShadows="true" receiveShadows="true" meshFile="SreenFBXASC045Rahmen.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ScreenFBXASC045Rahmen" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="KnFBXASC195FBXASC182pfeFBXASC045Dunkel">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="KnFBXASC195FBXASC182pfeFBXASC045Dunkel" castShadows="true" receiveShadows="true" meshFile="KnFBXASC195FBXASC182pfeFBXASC045Dunkel.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ButtonsFBXASC045dunkel" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="KnopfFBXASC045Hell">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="KnopfFBXASC045Hell" castShadows="true" receiveShadows="true" meshFile="KnopfFBXASC045Hell.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ButtonFBXASC045Hell" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="Rechner">
+                <position x="15.0379" y="-3.55271e-014" z="19.739" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0.0436194" qz="0" qw="0.999048" />
+                <node name="RechnerFBXASC045HW">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="RechnerFBXASC045HW" castShadows="true" receiveShadows="true" meshFile="RechnerFBXASC045HW.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045Farbe" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="RechnerFBXASC045Digitalanzeige">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="RechnerFBXASC045Digitalanzeige" castShadows="true" receiveShadows="true" meshFile="RechnerFBXASC045Digitalanzeige.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045Digitalanzeige1" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="RechnerFBXASC045LichtladeflFBXASC195FBXASC164che">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="RechnerFBXASC045LichtladeflFBXASC195FBXASC164che" castShadows="true" receiveShadows="true" meshFile="RechnerFBXASC045LichtladeflFBXASC195FBXASC164che.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045LadeflFBXASC195FBXASC164che" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="onFBXASC045c">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="onFBXASC045c" castShadows="true" receiveShadows="true" meshFile="onFBXASC045c.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ON" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="CE">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="CE" castShadows="true" receiveShadows="true" meshFile="CE.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04622" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="OFF">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="OFF" castShadows="true" receiveShadows="true" meshFile="OFF.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04621" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="wurzelsymbol">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="wurzelsymbol" castShadows="true" receiveShadows="true" meshFile="wurzelsymbol.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04620" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FBXASC048FBXASC0462">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC048FBXASC0462" castShadows="true" receiveShadows="true" meshFile="FBXASC048FBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04619" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FBXASC049FBXASC0462">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC049FBXASC0462" castShadows="true" receiveShadows="true" meshFile="FBXASC049FBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04618" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FBXASC052FBXASC0462">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC052FBXASC0462" castShadows="true" receiveShadows="true" meshFile="FBXASC052FBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04617" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FBXASC055FBXASC0462">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC055FBXASC0462" castShadows="true" receiveShadows="true" meshFile="FBXASC055FBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04616" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="punkt">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="punkt" castShadows="true" receiveShadows="true" meshFile="punkt.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04615" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FBXASC050FBXASC0462">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC050FBXASC0462" castShadows="true" receiveShadows="true" meshFile="FBXASC050FBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04614" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FBXASC053FBXASC0462">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC053FBXASC0462" castShadows="true" receiveShadows="true" meshFile="FBXASC053FBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04613" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FBXASC056FBXASC0462">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC056FBXASC0462" castShadows="true" receiveShadows="true" meshFile="FBXASC056FBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04612" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="gleich">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="gleich" castShadows="true" receiveShadows="true" meshFile="gleich.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04611" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FBXASC051FBXASC0462">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC051FBXASC0462" castShadows="true" receiveShadows="true" meshFile="FBXASC051FBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC04610" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FBXASC054FBXASC0462">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC054FBXASC0462" castShadows="true" receiveShadows="true" meshFile="FBXASC054FBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC0469" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FBXASC057FBXASC0462">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FBXASC057FBXASC0462" castShadows="true" receiveShadows="true" meshFile="FBXASC057FBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC0468" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="plus">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="plus" castShadows="true" receiveShadows="true" meshFile="plus.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC0467" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="minus">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="minus" castShadows="true" receiveShadows="true" meshFile="minus.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC0466" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="mal">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="mal" castShadows="true" receiveShadows="true" meshFile="mal.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC0465" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="durch">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="durch" castShadows="true" receiveShadows="true" meshFile="durch.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC0464" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="MFBXASC043">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="MFBXASC043" castShadows="true" receiveShadows="true" meshFile="MFBXASC043.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC0463" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="MFBXASC045">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="MFBXASC045" castShadows="true" receiveShadows="true" meshFile="MFBXASC045.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC0462" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="MRC">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="MRC" castShadows="true" receiveShadows="true" meshFile="MRC.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045TastenFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="prozent">
+                    <position x="-1.7053e-013" y="-1.69407e-021" z="2.72848e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="prozent" castShadows="true" receiveShadows="true" meshFile="prozent.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RechnerFBXASC045Tasten" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="TastaturFBXASC045Maus">
+                <position x="15.9779" y="0" z="7.52063" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="MausFBXASC045Schwarz">
+                    <position x="23.4971" y="0" z="-21.6167" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="-0.0871559" qz="0" qw="0.996195" />
+                    <entity name="MausFBXASC045Schwarz" castShadows="true" receiveShadows="true" meshFile="MausFBXASC045Schwarz.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="TastaturFBXASC045BodyFBXASC0462" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="MausFBXASC045Rad">
+                    <position x="23.4971" y="0" z="-21.6167" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="-0.0871559" qz="0" qw="0.996195" />
+                    <entity name="MausFBXASC045Rad" castShadows="true" receiveShadows="true" meshFile="MausFBXASC045Rad.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="TastaturFBXASC045BodyFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="MausFBXASC045DBlau">
+                    <position x="23.4971" y="0" z="-21.6167" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="-0.0871559" qz="0" qw="0.996195" />
+                    <entity name="MausFBXASC045DBlau" castShadows="true" receiveShadows="true" meshFile="MausFBXASC045DBlau.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="MausFBXASC045Farbe" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="TastaturFBXASC045HW">
+                    <position x="8.52651e-014" y="0" z="1.81899e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="TastaturFBXASC045HW" castShadows="true" receiveShadows="true" meshFile="TastaturFBXASC045HW.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="TastaturFBXASC045Body" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="TastenFBXASC045dunkel">
+                    <position x="8.52651e-014" y="0" z="1.81899e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="TastenFBXASC045dunkel" castShadows="true" receiveShadows="true" meshFile="TastenFBXASC045dunkel.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="TastenFBXASC045Dunkel" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="TastenFBXASC045Hell">
+                    <position x="8.52651e-014" y="0" z="1.81899e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="TastenFBXASC045Hell" castShadows="true" receiveShadows="true" meshFile="TastenFBXASC045Hell.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="TastenFBXASC045Hell1" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="Stifthalter">
+                <position x="-60.0715" y="68.5" z="-118.302" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="StifthalterFBXASC0462">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="StifthalterFBXASC0462" castShadows="true" receiveShadows="true" meshFile="StifthalterFBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Halter" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift1FBXASC045Farbe">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift1FBXASC045Farbe" castShadows="true" receiveShadows="true" meshFile="Stift1FBXASC045Farbe.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StifrFarbe1FBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift1FBXASC045Griff">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift1FBXASC045Griff" castShadows="true" receiveShadows="true" meshFile="Stift1FBXASC045Griff.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StiftFBXASC045GriffFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift2FBXASC045GriffFBXASC045Deckel">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift2FBXASC045GriffFBXASC045Deckel" castShadows="true" receiveShadows="true" meshFile="Stift2FBXASC045GriffFBXASC045Deckel.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="FilzstiftFBXASC045FarbeFBXASC0463" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift2FBXASC045Chrom">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift2FBXASC045Chrom" castShadows="true" receiveShadows="true" meshFile="Stift2FBXASC045Chrom.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ChromFBXASC045StifteFBXASC0462" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift2FBXASC045Farbe">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift2FBXASC045Farbe" castShadows="true" receiveShadows="true" meshFile="Stift2FBXASC045Farbe.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StifrFarbe2" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift3FBXASC045Gummi">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift3FBXASC045Gummi" castShadows="true" receiveShadows="true" meshFile="Stift3FBXASC045Gummi.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StiftFBXASC045GummiFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift3FBXASC045Griff">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift3FBXASC045Griff" castShadows="true" receiveShadows="true" meshFile="Stift3FBXASC045Griff.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StiftFBXASC045Griff3" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift3FBXASC045Halter">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift3FBXASC045Halter" castShadows="true" receiveShadows="true" meshFile="Stift3FBXASC045Halter.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StiftFBXASC045MetallFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift3FBXASC045chrom">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift3FBXASC045chrom" castShadows="true" receiveShadows="true" meshFile="Stift3FBXASC045chrom.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ChromFBXASC045StifteFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift4FBXASC045Griff">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift4FBXASC045Griff" castShadows="true" receiveShadows="true" meshFile="Stift4FBXASC045Griff.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StiftFBXASC045Griff2" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift4FBXASC045Chrom">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift4FBXASC045Chrom" castShadows="true" receiveShadows="true" meshFile="Stift4FBXASC045Chrom.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ChromFBXASC045Stifte" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift4FBXASC045Gummi">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift4FBXASC045Gummi" castShadows="true" receiveShadows="true" meshFile="Stift4FBXASC045Gummi.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StiftFBXASC045Gummi" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift4FBXASC045Mine">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift4FBXASC045Mine" castShadows="true" receiveShadows="true" meshFile="Stift4FBXASC045Mine.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="BleistiftmineFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift5FBXASC045Griff">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift5FBXASC045Griff" castShadows="true" receiveShadows="true" meshFile="Stift5FBXASC045Griff.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StiftFBXASC045Griff1" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Stift5FBXASC045HalterFBXASC045Farbe">
+                    <position x="0" y="2.84217e-014" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Stift5FBXASC045HalterFBXASC045Farbe" castShadows="true" receiveShadows="true" meshFile="Stift5FBXASC045HalterFBXASC045Farbe.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StifrFarbe1" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="Equerre">
+                <position x="34.8803" y="0" z="61.0407" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="EquerreFBXASC045Trans">
+                    <position x="0" y="0" z="1.81899e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="EquerreFBXASC045Trans" castShadows="true" receiveShadows="true" meshFile="EquerreFBXASC045Trans.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Equerre1" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="EquerreFBXASC045Griff">
+                    <position x="0" y="0" z="1.81899e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="EquerreFBXASC045Griff" castShadows="true" receiveShadows="true" meshFile="EquerreFBXASC045Griff.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="CutterFBXASC045SchieberFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="Schere">
+                <position x="0" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="SchereFBXASC045Griff">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="SchereFBXASC045Griff" castShadows="true" receiveShadows="true" meshFile="SchereFBXASC045Griff.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="SchereFBXASC045Griff1" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="SchereFBXASC045Messer">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="SchereFBXASC045Messer" castShadows="true" receiveShadows="true" meshFile="SchereFBXASC045Messer.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="SchereFBXASC045MetallFBXASC0464" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="SchereFBXASC045Nabe">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="SchereFBXASC045Nabe" castShadows="true" receiveShadows="true" meshFile="SchereFBXASC045Nabe.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ChromFBXASC045KlammerFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="Tasse">
+                <position x="557.171" y="438.5" z="-146.904" />
+                <scale x="0.719" y="0.719" z="0.719" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <entity name="Tasse" castShadows="true" receiveShadows="true" meshFile="Tasse.mesh">
+                    <subentities>
+                        <subentity index="0" materialName="Porzellan" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="Leuchtstift">
+                <position x="0" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="LeuchtstiftFBXASC045Farbe">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="LeuchtstiftFBXASC045Farbe" castShadows="true" receiveShadows="true" meshFile="LeuchtstiftFBXASC045Farbe.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="LeuchtstiftFBXASC045Farbe1" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="LeuchtstiftFBXASC045Deckel">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="LeuchtstiftFBXASC045Deckel" castShadows="true" receiveShadows="true" meshFile="LeuchtstiftFBXASC045Deckel.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="FilzstiftFBXASC045FarbeFBXASC0462" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="Gummi">
+                <position x="68.7916" y="0" z="72.6675" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="GummiFBXASC045HFBXASC195FBXASC188lle">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="GummiFBXASC045HFBXASC195FBXASC188lle" castShadows="true" receiveShadows="true" meshFile="GummiFBXASC045HFBXASC195FBXASC188lle.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="GummihFBXASC195FBXASC188lle" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="GummiFBXASC0462">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="GummiFBXASC0462" castShadows="true" receiveShadows="true" meshFile="GummiFBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Gummi1" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="FilzstiftFBXASC045Fett">
+                <position x="-118.205" y="0" z="-44.5691" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="FilzstiftFBXASC045DeckelFBXASC045Farbe">
+                    <position x="0" y="0" z="1.81899e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FilzstiftFBXASC045DeckelFBXASC045Farbe" castShadows="true" receiveShadows="true" meshFile="FilzstiftFBXASC045DeckelFBXASC045Farbe.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="FilzstiftFBXASC045FarbeFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FilzstiftFBXASC045HintenFBXASC045Farbe">
+                    <position x="0" y="0" z="1.81899e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FilzstiftFBXASC045HintenFBXASC045Farbe" castShadows="true" receiveShadows="true" meshFile="FilzstiftFBXASC045HintenFBXASC045Farbe.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="FilzstiftFBXASC045Farbe" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="FilzstiftFBXASC045Griff">
+                    <position x="0" y="0" z="1.81899e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="FilzstiftFBXASC045Griff" castShadows="true" receiveShadows="true" meshFile="FilzstiftFBXASC045Griff.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="FilzstiftFBXASC045Griff1" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="Cutter">
+                <position x="0" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="CutterFBXASC045HFBXASC195FBXASC188lle1">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="CutterFBXASC045HFBXASC195FBXASC188lle1" castShadows="true" receiveShadows="true" meshFile="CutterFBXASC045HFBXASC195FBXASC188lle1.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="SchereFBXASC045MetallFBXASC0463" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="CutterFBXASC045Schieber">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="CutterFBXASC045Schieber" castShadows="true" receiveShadows="true" meshFile="CutterFBXASC045Schieber.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="CutterFBXASC045Schieber1" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="CutterFBXASC045Klinge">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="CutterFBXASC045Klinge" castShadows="true" receiveShadows="true" meshFile="CutterFBXASC045Klinge.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="SchereFBXASC045MetallFBXASC0462" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="CutterFBXASC045HW">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="CutterFBXASC045HW" castShadows="true" receiveShadows="true" meshFile="CutterFBXASC045HW.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="CutterFBXASC045HFBXASC195FBXASC188lle" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="BFBXASC195FBXASC188roklammern">
+                <position x="0" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="BFBXASC195FBXASC188roklammerFBXASC032InstanzFBXASC045ObjektFBXASC0462">
+                    <position x="320.179" y="4.54747e-013" z="-113.252" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="-1.61375e-008" qy="0.793353" qz="-1.22577e-007" qw="0.608762" />
+                    <node name="BFBXASC195FBXASC188roklammerFBXASC0464">
+                        <position x="0" y="2.1684e-019" z="-2.27374e-013" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="BFBXASC195FBXASC188roklammerFBXASC0464" castShadows="true" receiveShadows="true" meshFile="BFBXASC195FBXASC188roklammerFBXASC0464.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="KlammernFBXASC045DunklerFBXASC0463" />
+                            </subentities>
+                        </entity>
+                    </node>
+                </node>
+                <node name="BFBXASC195FBXASC188roklammerFBXASC032InstanzFBXASC045ObjektFBXASC0461">
+                    <position x="332.926" y="-8.75058e-014" z="-110.064" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="-3.71776e-008" qy="0.887011" qz="-1.17912e-007" qw="0.461749" />
+                    <node name="BFBXASC195FBXASC188roklammerFBXASC0463">
+                        <position x="0" y="2.1684e-019" z="0" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="BFBXASC195FBXASC188roklammerFBXASC0463" castShadows="true" receiveShadows="true" meshFile="BFBXASC195FBXASC188roklammerFBXASC0463.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="KlammernFBXASC045DunklerFBXASC0462" />
+                            </subentities>
+                        </entity>
+                    </node>
+                </node>
+                <node name="BFBXASC195FBXASC188roklammerFBXASC032InstanzFBXASC045Objekt">
+                    <position x="341.424" y="0" z="-98.8522" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="-0.130526" qz="0" qw="0.991445" />
+                    <node name="BFBXASC195FBXASC188roklammerFBXASC0462">
+                        <position x="0" y="0" z="0" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="BFBXASC195FBXASC188roklammerFBXASC0462" castShadows="true" receiveShadows="true" meshFile="BFBXASC195FBXASC188roklammerFBXASC0462.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="KlammernFBXASC045DunklerFBXASC0461" />
+                            </subentities>
+                        </entity>
+                    </node>
+                </node>
+                <node name="BFBXASC195FBXASC188roklammer">
+                    <position x="330.095" y="0" z="-90.7081" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="BFBXASC195FBXASC188roklammer" castShadows="true" receiveShadows="true" meshFile="BFBXASC195FBXASC188roklammer.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="KlammernFBXASC045Dunkler" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="becher">
+                <position x="-31.9564" y="0" z="3.76111" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <entity name="becher" castShadows="true" receiveShadows="true" meshFile="becher.mesh">
+                    <subentities>
+                        <subentity index="0" materialName="Becher" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="Keks">
+                <position x="-8.45917" y="0" z="21.6179" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <entity name="Keks" castShadows="true" receiveShadows="true" meshFile="Keks.mesh">
+                    <subentities>
+                        <subentity index="0" materialName="Keks1" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="Mineralwasserflasche">
+                <position x="0" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="MineralwasserflascheFBXASC0462">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="MineralwasserflascheFBXASC0462" castShadows="true" receiveShadows="true" meshFile="MineralwasserflascheFBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="PlexiFBXASC046Mineral" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="MineralwasserflascheFBXASC045Deckel">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="MineralwasserflascheFBXASC045Deckel" castShadows="true" receiveShadows="true" meshFile="MineralwasserflascheFBXASC045Deckel.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Deckel_Weiss" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="Ordner">
+                <position x="0" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="OrdnerFBXASC045HW">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="OrdnerFBXASC045HW" castShadows="true" receiveShadows="true" meshFile="OrdnerFBXASC045HW.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="OrdnerFBXASC045Einband" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="OrdnerFBXASC045Inhalt">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="OrdnerFBXASC045Inhalt" castShadows="true" receiveShadows="true" meshFile="OrdnerFBXASC045Inhalt.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="PapierFBXASC045Ordner" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="OrdnerFBXASC045Etikett">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="OrdnerFBXASC045Etikett" castShadows="true" receiveShadows="true" meshFile="OrdnerFBXASC045Etikett.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Etikett" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Boole">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <node name="ZylinderFBXASC0462">
+                        <position x="603.453" y="478.481" z="-81.7811" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                    </node>
+                    <node name="OrdnerFBXASC045ChromFBXASC0462">
+                        <position x="0" y="0" z="0" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                    </node>
+                    <node name="Zylinder">
+                        <position x="603.453" y="478.481" z="-81.7811" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="Zylinder" castShadows="true" receiveShadows="true" meshFile="Zylinder.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="phong3" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="OrdnerFBXASC045Chrom">
+                        <position x="0" y="0" z="0" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="OrdnerFBXASC045Chrom" castShadows="true" receiveShadows="true" meshFile="OrdnerFBXASC045Chrom.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="ChromFBXASC045Klammer" />
+                            </subentities>
+                        </entity>
+                    </node>
+                </node>
+            </node>
+            <node name="Bostitch">
+                <position x="0" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="BostitchFBXASC045Farbe">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="BostitchFBXASC045Farbe" castShadows="true" receiveShadows="true" meshFile="BostitchFBXASC045Farbe.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="BostitchFBXASC045Farbe1" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="BostitchFBXASC045Chrom">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="BostitchFBXASC045Chrom" castShadows="true" receiveShadows="true" meshFile="BostitchFBXASC045Chrom.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="SchereFBXASC045MetallFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="KleberolleFBXASC045Tesa">
+                <position x="0" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="KleberolleFBXASC045HW">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="KleberolleFBXASC045HW" castShadows="true" receiveShadows="true" meshFile="KleberolleFBXASC045HW.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="KlebebandhalterFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="KleberolleFBXASC045AchseFBXASC0453eck">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="KleberolleFBXASC045AchseFBXASC0453eck" castShadows="true" receiveShadows="true" meshFile="KleberolleFBXASC045AchseFBXASC0453eck.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Klebebandhalter" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="KleberolleFBXASC045AchseFBXASC045Chrom">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="KleberolleFBXASC045AchseFBXASC045Chrom" castShadows="true" receiveShadows="true" meshFile="KleberolleFBXASC045AchseFBXASC045Chrom.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ChromFBXASC045KlebebandrolleFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="KleberolleFBXASC045Chrom">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="KleberolleFBXASC045Chrom" castShadows="true" receiveShadows="true" meshFile="KleberolleFBXASC045Chrom.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="ChromFBXASC045Klebebandrolle" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="KleberolleFBXASC045TesaFBXASC0462">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="KleberolleFBXASC045TesaFBXASC0462" castShadows="true" receiveShadows="true" meshFile="KleberolleFBXASC045TesaFBXASC0462.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Tesa" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="KleberolleFBXASC045Weiss">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="KleberolleFBXASC045Weiss" castShadows="true" receiveShadows="true" meshFile="KleberolleFBXASC045Weiss.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RolleFBXASC045Weiss" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="Locher">
+                <position x="21.3157" y="0" z="-1.81899e-012" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="0" qz="0" qw="1" />
+                <node name="LocherFBXASC045Farbe">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="LocherFBXASC045Farbe" castShadows="true" receiveShadows="true" meshFile="LocherFBXASC045Farbe.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="LocherFBXASC045Farbe1" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="LocherFBXASC045Chrom">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="LocherFBXASC045Chrom" castShadows="true" receiveShadows="true" meshFile="LocherFBXASC045Chrom.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="SchereFBXASC045Metall" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="LocherFBXASC045Schwarz">
+                    <position x="0" y="0" z="0" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="LocherFBXASC045Schwarz" castShadows="true" receiveShadows="true" meshFile="LocherFBXASC045Schwarz.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="LocherFBXASC045Schwarz1" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="Schreibblock">
+                <position x="365.772" y="370" z="47.3542" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="0" qy="-0.130526" qz="0" qw="0.991445" />
+                <node name="Block">
+                    <position x="-2.27374e-013" y="5.68434e-014" z="3.63798e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Block" castShadows="true" receiveShadows="true" meshFile="Block.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="PapierFBXASC045A4" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Lineal">
+                    <position x="-2.27374e-013" y="5.68434e-014" z="3.63798e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Lineal" castShadows="true" receiveShadows="true" meshFile="Lineal.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Lineal1" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="StiftFBXASC045Griff">
+                    <position x="-2.27374e-013" y="5.68434e-014" z="3.63798e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="StiftFBXASC045Griff" castShadows="true" receiveShadows="true" meshFile="StiftFBXASC045Griff.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Bleistiftgriff" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="StiftFBXASC045Mine">
+                    <position x="-2.27374e-013" y="5.68434e-014" z="3.63798e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="StiftFBXASC045Mine" castShadows="true" receiveShadows="true" meshFile="StiftFBXASC045Mine.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Bleistiftmine" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="StiftFBXASC045Metall">
+                    <position x="-2.27374e-013" y="5.68434e-014" z="3.63798e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="StiftFBXASC045Metall" castShadows="true" receiveShadows="true" meshFile="StiftFBXASC045Metall.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="StiftFBXASC045Metall1" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="StiftFBXASC045Radiergummi">
+                    <position x="-2.27374e-013" y="5.68434e-014" z="3.63798e-012" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="StiftFBXASC045Radiergummi" castShadows="true" receiveShadows="true" meshFile="StiftFBXASC045Radiergummi.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="BlockFBXASC045Weiss" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+            <node name="Telefon">
+                <position x="531.925" y="371" z="-52.9758" />
+                <scale x="1" y="1" z="1" />
+                <rotation qx="8.05686e-008" qy="-0.92388" qz="-3.33726e-008" qw="0.382683" />
+                <node name="Telefon_HFBXASC195FBXASC182hrer1">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Telefon_HFBXASC195FBXASC182hrer1" castShadows="true" receiveShadows="true" meshFile="Telefon_HFBXASC195FBXASC182hrer1.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Telefon_HFBXASC195FBXASC182hrer_unten" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Telefon_HFBXASC195FBXASC182hrer2">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Telefon_HFBXASC195FBXASC182hrer2" castShadows="true" receiveShadows="true" meshFile="Telefon_HFBXASC195FBXASC182hrer2.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Telefon_HFBXASC195FBXASC182hrer_oben" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Telefon_Anzeige">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Telefon_Anzeige" castShadows="true" receiveShadows="true" meshFile="Telefon_Anzeige.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="AnzeigeFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Telefon_Glas">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Telefon_Glas" castShadows="true" receiveShadows="true" meshFile="Telefon_Glas.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="TelefonFBXASC045Glas" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Telefon_Tasten_Hell">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <node name="Schnellwahlen">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <node name="Telefon_Tasten_HellFBXASC04639">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04639" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04639.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04633" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04621">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04621" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04621.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04632" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04620">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04620" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04620.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04631" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04619">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04619" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04619.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04630" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04618">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04618" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04618.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04629" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04617">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04617" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04617.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04628" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04616">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04616" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04616.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04627" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04615">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04615" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04615.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04626" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04614">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04614" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04614.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04625" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04613">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04613" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04613.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04624" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04612">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04612" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04612.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04623" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04611">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04611" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04611.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04622" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC04610">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC04610" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC04610.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04621" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC0469">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC0469" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC0469.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04620" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC0468">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC0468" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC0468.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04619" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC0467">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC0467" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC0467.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04618" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC0466">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC0466" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC0466.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04617" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC0465">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC0465" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC0465.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04616" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC0464">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC0464" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC0464.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04615" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC0463">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC0463" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC0463.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04614" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Telefon_Tasten_HellFBXASC0462">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Telefon_Tasten_HellFBXASC0462" castShadows="true" receiveShadows="true" meshFile="Telefon_Tasten_HellFBXASC0462.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04613" />
+                                </subentities>
+                            </entity>
+                        </node>
+                    </node>
+                    <node name="Symbole">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <node name="Symbol19">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Symbol19" castShadows="true" receiveShadows="true" meshFile="Symbol19.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04612" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Symbol17">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Symbol17" castShadows="true" receiveShadows="true" meshFile="Symbol17.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04611" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Symbol15">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Symbol15" castShadows="true" receiveShadows="true" meshFile="Symbol15.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC04610" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Symbol13">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Symbol13" castShadows="true" receiveShadows="true" meshFile="Symbol13.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC0469" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Symbol11">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Symbol11" castShadows="true" receiveShadows="true" meshFile="Symbol11.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC0468" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Symbol9">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Symbol9" castShadows="true" receiveShadows="true" meshFile="Symbol9.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC0467" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Symbol7">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Symbol7" castShadows="true" receiveShadows="true" meshFile="Symbol7.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC0466" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Symbol5">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Symbol5" castShadows="true" receiveShadows="true" meshFile="Symbol5.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC0465" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Symbol3">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Symbol3" castShadows="true" receiveShadows="true" meshFile="Symbol3.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC0464" />
+                                </subentities>
+                            </entity>
+                        </node>
+                        <node name="Symbol1">
+                            <position x="-3.43323e-005" y="5.44779e-005" z="7.62939e-006" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0" qy="0" qz="0" qw="1" />
+                            <entity name="Symbol1" castShadows="true" receiveShadows="true" meshFile="Symbol1.mesh">
+                                <subentities>
+                                    <subentity index="0" materialName="Taste_HellFBXASC0463" />
+                                </subentities>
+                            </entity>
+                        </node>
+                    </node>
+                    <node name="BreiteTaste">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="BreiteTaste" castShadows="true" receiveShadows="true" meshFile="BreiteTaste.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_HellFBXASC0462" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="Menu">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="Menu" castShadows="true" receiveShadows="true" meshFile="Menu.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_HellFBXASC0461" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="SpezTasten">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="SpezTasten" castShadows="true" receiveShadows="true" meshFile="SpezTasten.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_Hell" />
+                            </subentities>
+                        </entity>
+                    </node>
+                </node>
+                <node name="Telefon_Beschriftungen">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Telefon_Beschriftungen" castShadows="true" receiveShadows="true" meshFile="Telefon_Beschriftungen.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Kunststoffabdeckung" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="TextRaster2">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="TextRaster2" castShadows="true" receiveShadows="true" meshFile="TextRaster2.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="RasterFBXASC0461" />
+                        </subentities>
+                    </entity>
+                    <node name="SplineFBXASC045ObjektFBXASC0462">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                    </node>
+                </node>
+                <node name="TextRaster1">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="TextRaster1" castShadows="true" receiveShadows="true" meshFile="TextRaster1.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Raster" />
+                        </subentities>
+                    </entity>
+                    <node name="SplineFBXASC045Objekt">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                    </node>
+                </node>
+                <node name="Telefon_Tasten_Dunkel">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <node name="raute">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="raute" castShadows="true" receiveShadows="true" meshFile="raute.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_DunkelFBXASC04611" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="FBXASC048">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="FBXASC048" castShadows="true" receiveShadows="true" meshFile="FBXASC048.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_DunkelFBXASC04610" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="stern">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="stern" castShadows="true" receiveShadows="true" meshFile="stern.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_DunkelFBXASC0469" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="FBXASC065">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="FBXASC065" castShadows="true" receiveShadows="true" meshFile="FBXASC065.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_DunkelFBXASC0468" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="FBXASC063">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="FBXASC063" castShadows="true" receiveShadows="true" meshFile="FBXASC063.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_DunkelFBXASC0467" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="FBXASC061">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="FBXASC061" castShadows="true" receiveShadows="true" meshFile="FBXASC061.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_DunkelFBXASC0466" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="FBXASC059">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="FBXASC059" castShadows="true" receiveShadows="true" meshFile="FBXASC059.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_DunkelFBXASC0465" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="FBXASC057">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="FBXASC057" castShadows="true" receiveShadows="true" meshFile="FBXASC057.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_DunkelFBXASC0464" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="FBXASC055">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="FBXASC055" castShadows="true" receiveShadows="true" meshFile="FBXASC055.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_DunkelFBXASC0463" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="FBXASC053">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="FBXASC053" castShadows="true" receiveShadows="true" meshFile="FBXASC053.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_DunkelFBXASC0462" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="FBXASC051">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="FBXASC051" castShadows="true" receiveShadows="true" meshFile="FBXASC051.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_DunkelFBXASC0461" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="FBXASC049">
+                        <position x="1.14441e-005" y="-9.811e-005" z="-7.6294e-006" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                        <entity name="FBXASC049" castShadows="true" receiveShadows="true" meshFile="FBXASC049.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="Taste_Dunkel" />
+                            </subentities>
+                        </entity>
+                    </node>
+                </node>
+                <node name="Telefonkabel">
+                    <position x="-16.3144" y="2.9999" z="-15.3972" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Telefonkabel" castShadows="true" receiveShadows="true" meshFile="Telefonkabel.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="Kabel" />
+                        </subentities>
+                    </entity>
+                    <node name="Helix">
+                        <position x="107.506" y="-0.000332921" z="-7.9155e-005" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0.653281" qy="0.270598" qz="0.653282" qw="0.270598" />
+                        <node name="BiegeFBXASC045ObjektFBXASC0467">
+                            <position x="29.7382" y="29.738" z="-44.0793" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="-0.197674" qy="0.678914" qz="-0.619842" qw="0.340288" />
+                        </node>
+                        <node name="BiegeFBXASC045ObjektFBXASC0466">
+                            <position x="28.871" y="28.8708" z="30.0526" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0.08866" qy="0.673311" qz="-0.422793" qw="0.600031" />
+                        </node>
+                        <node name="BiegeFBXASC045ObjektFBXASC0465">
+                            <position x="-4.64247" y="-4.64254" z="66.4545" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0.444301" qy="0.550088" qz="-0.0748021" qw="0.703139" />
+                        </node>
+                        <node name="BiegeFBXASC045ObjektFBXASC0464">
+                            <position x="-23.797" y="-23.7972" z="79.4811" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0.602416" qy="0.370263" qz="0.164158" qw="0.687788" />
+                        </node>
+                        <node name="BiegeFBXASC045ObjektFBXASC0463">
+                            <position x="-21.6381" y="-21.6381" z="55.4332" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0.694294" qy="-0.134" qz="0.585692" qw="0.396187" />
+                        </node>
+                        <node name="BiegeFBXASC045ObjektFBXASC0462">
+                            <position x="1.61339" y="1.61333" z="26.3027" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0.667736" qy="0.232656" qz="0.307648" qw="0.636673" />
+                        </node>
+                        <node name="BiegeFBXASC045Objekt">
+                            <position x="2.1823" y="-1.50195" z="-6.15375" />
+                            <scale x="1" y="1" z="1" />
+                            <rotation qx="0.664876" qy="0.275401" qz="0.641478" qw="-0.265709" />
+                        </node>
+                    </node>
+                    <node name="Kreis">
+                        <position x="0.000125885" y="-0.000128708" z="3.05176e-005" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0" qy="0" qz="0" qw="1" />
+                    </node>
+                    <node name="CapFBXASC0322">
+                        <position x="90.2189" y="1.03552" z="15.8228" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0.196434" qy="-0.249669" qz="0.822157" qw="0.472373" />
+                        <entity name="CapFBXASC0322" castShadows="true" receiveShadows="true" meshFile="CapFBXASC0322.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="phong2" />
+                            </subentities>
+                        </entity>
+                    </node>
+                    <node name="CapFBXASC0321">
+                        <position x="89.0487" y="9.99322" z="-0.804857" />
+                        <scale x="1" y="1" z="1" />
+                        <rotation qx="0.833872" qy="-0.0471793" qz="-0.54942" qw="-0.0238746" />
+                        <entity name="CapFBXASC0321" castShadows="true" receiveShadows="true" meshFile="CapFBXASC0321.mesh">
+                            <subentities>
+                                <subentity index="0" materialName="phong1" />
+                            </subentities>
+                        </entity>
+                    </node>
+                </node>
+                <node name="Telefon_LED2">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Telefon_LED2" castShadows="true" receiveShadows="true" meshFile="Telefon_LED2.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="LED_DunkelFBXASC0461" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Telefon_LED1">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Telefon_LED1" castShadows="true" receiveShadows="true" meshFile="Telefon_LED1.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="LED_Dunkel" />
+                            <subentity index="1" materialName="LED_Leuchtend" />
+                        </subentities>
+                    </entity>
+                </node>
+                <node name="Telefon_body">
+                    <position x="0.00018692" y="-9.811e-005" z="-3.8147e-006" />
+                    <scale x="1" y="1" z="1" />
+                    <rotation qx="0" qy="0" qz="0" qw="1" />
+                    <entity name="Telefon_body" castShadows="true" receiveShadows="true" meshFile="Telefon_body.mesh">
+                        <subentities>
+                            <subentity index="0" materialName="office30" />
+                            <subentity index="1" materialName="NoMaterial" />
+                        </subentities>
+                    </entity>
+                </node>
+            </node>
+        </node>
+    </nodes>
+</scene>

@@ -11,24 +11,21 @@
 #include <OgreEntity.h>
 #include <string>
 #include "../CharacterController.h"
+#include "UsableObject.h"
 
-class Telephone {
+class Telephone : public UsableObject {
 
 private:
 	Ogre::Entity* mEntity;
-	Ogre::SceneNode* mSceneNode;
-	Ogre::SceneManager* mSceneMgr;
 	Ogre::RaySceneQuery* mRaySceneQuery;
 	const char* mName;
 
 	void setup();
-	void setupButtons();
 
 public:
-	Telephone(Ogre::SceneManager* sceneMgr, const char* name);
+	Telephone(Ogre::SceneManager* sceneMgr, CharacterController* cc, const char* name);
 	virtual ~Telephone();
 
-	bool canUse(CharacterController* character);
 	void highlight(bool highlight);
 
 	Ogre::Entity* getEntity();
