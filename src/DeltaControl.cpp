@@ -11,14 +11,13 @@
 
 #include "lib/DotSceneLoader.h"
 
-//-------------------------------------------------------------------------------------
+
 DeltaControl::DeltaControl(void) {
 }
-//-------------------------------------------------------------------------------------
+
 DeltaControl::~DeltaControl(void) {
 }
 
-//-------------------------------------------------------------------------------------
 void DeltaControl::createScene(void) {
 
 	mSceneMgr->setSkyBox(true, "StormySkyBox");
@@ -36,6 +35,11 @@ void DeltaControl::createScene(void) {
 	roomNode->setPosition(650,0,200);
 	sceneLoader->parseDotScene("TCOO_Scene.scene",Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME, mSceneMgr, roomNode);
 
+	mMonitor = new Monitor(mSceneMgr, mCharacter);
+	mPhone = new Telephone(mSceneMgr, mCharacter);
+
+
+	// set lightning
 	mSceneMgr->setAmbientLight(Ogre::ColourValue(0.5,0.5,0.5));
 
 	Ogre::Light* pointLight = mSceneMgr->createLight("pointLight");
@@ -45,19 +49,18 @@ void DeltaControl::createScene(void) {
 	pointLight->setDiffuseColour(0.95, 0.95, 0.95);
 	pointLight->setSpecularColour(0.95, 0.95, 0.95);
 
-	mSceneMgr->setShadowTechnique(Ogre::SHADOWTYPE_STENCIL_ADDITIVE);
 
-	mMonitor = new Monitor(mSceneMgr, mCharacter);
-	mPhone = new Telephone(mSceneMgr, mCharacter);
+	mSceneMgr->setShadowTechnique(Ogre::SHADOWTYPE_STENCIL_ADDITIVE);
 }
 
 bool DeltaControl::frameRenderingQueued(const Ogre::FrameEvent& evt) {
 
 	bool ret = BaseApplication::frameRenderingQueued(evt);
 	mPhone->highlight(mPhone->canUse());
-//	mPhone->highlight(true);
-	//mCharacter->setMove(!mControlCenter->intersects(mCharacter->getBoundingBox()));
 	mMonitor->highlight(mMonitor->canUse());
+
+	//mCharacter->setMove(!mControlCenter->intersects(mCharacter->getBoundingBox()));
+
 	return ret;
 }
 
