@@ -6,6 +6,7 @@
  */
 
 #include "CharacterController.h"
+#include "model/UsableObject.h"
 
 using namespace Ogre;
 
@@ -144,6 +145,10 @@ void CharacterController::injectKeyDown(const OIS::KeyEvent& evt)
 	else if (evt.key == OIS::KC_S) mKeyDirection.z = 1;
 	else if (evt.key == OIS::KC_D) mKeyDirection.x = 1;
 
+	else if (evt.key == OIS::KC_E && mCurUsableObject != NULL)
+	{
+		mCurUsableObject->use();
+	}
 	else if (evt.key == OIS::KC_SPACE && (mTopAnimID == ANIM_IDLE_TOP || mTopAnimID == ANIM_RUN_TOP))
 	{
 		// jump if on ground
@@ -473,6 +478,10 @@ const AxisAlignedBox& CharacterController::getBoundingBox()
 
 void CharacterController::setMove(bool move) {
 	mMove = move;
+}
+
+void CharacterController::setUsableObject(UsableObject* object) {
+	mCurUsableObject = object;
 }
 
 

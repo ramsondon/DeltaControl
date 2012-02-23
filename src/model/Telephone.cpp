@@ -31,3 +31,7 @@ void Telephone::highlight(bool highlight) {
 		mEntity->setMaterialName("NoMaterial");
 	}
 }
+
+void Telephone::use() {
+	LogManager::getSingleton().logMessage("use TELEPHONE");
+}

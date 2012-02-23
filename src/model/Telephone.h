@@ -23,7 +23,7 @@ public:
 	virtual ~Telephone();
 
 	void highlight(bool highlight);
-
+	virtual void use();
 };
 
 #endif /* TELEPHONE_H_ */

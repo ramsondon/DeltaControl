@@ -21,3 +21,7 @@ bool UsableObject::canUse()
 {
 	return mEntity->getWorldBoundingBox().intersects(mCharacterController->getBoundingBox());
 }
+
+void UsableObject::use() {
+	// to be overriden
+}

@@ -27,6 +27,8 @@
 
 using namespace Ogre;
 
+class UsableObject;
+
 class CharacterController {
 private:
 	// all the animations our character has, and a null ID
@@ -73,6 +75,9 @@ private:
 	Ogre::RaySceneQuery* mRaySceneQuery;
 	SceneManager* mSceneMgr;
 
+	// the current usable object for the player
+	UsableObject* mCurUsableObject;
+
 public:
 	CharacterController(Camera* cam);
 	virtual ~CharacterController();
@@ -88,6 +93,7 @@ public:
 	const AxisAlignedBox & getBoundingBox();
 	void setMove(bool move);
 	bool canMove();
+	void setUsableObject(UsableObject* object);
 
 private:
 	void setupAnimations();

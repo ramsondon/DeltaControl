@@ -28,6 +28,7 @@ public:
 	virtual ~UsableObject();
 
 	virtual bool canUse();
+	virtual void use();
 };
 
 #endif /* USABLEOBJECT_H_ */

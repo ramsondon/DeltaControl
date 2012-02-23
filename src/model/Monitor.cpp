@@ -50,3 +50,7 @@ bool Monitor::canUse() {
 	}
 	return true;
 }
+
+void Monitor::use() {
+	LogManager::getSingleton().logMessage("use MONITOR");
+}

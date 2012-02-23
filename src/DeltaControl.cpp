@@ -40,7 +40,8 @@ void DeltaControl::createScene(void) {
 
 
 	// set lightning
-	mSceneMgr->setAmbientLight(Ogre::ColourValue(0.5,0.5,0.5));
+	mSceneMgr->setAmbientLight(Ogre::ColourValue(0.1,0.1,0.1));
+	mSceneMgr->setShadowTechnique(Ogre::SHADOWTYPE_STENCIL_ADDITIVE);
 
 	Ogre::Light* pointLight = mSceneMgr->createLight("pointLight");
 	pointLight->setType(Ogre::Light::LT_POINT);
@@ -48,16 +49,22 @@ void DeltaControl::createScene(void) {
 
 	pointLight->setDiffuseColour(0.95, 0.95, 0.95);
 	pointLight->setSpecularColour(0.95, 0.95, 0.95);
-
-
-	mSceneMgr->setShadowTechnique(Ogre::SHADOWTYPE_STENCIL_ADDITIVE);
 }
 
 bool DeltaControl::frameRenderingQueued(const Ogre::FrameEvent& evt) {
 
 	bool ret = BaseApplication::frameRenderingQueued(evt);
-	mPhone->highlight(mPhone->canUse());
-	mMonitor->highlight(mMonitor->canUse());
+	UsableObject* object = NULL;
+	if (mPhone->canUse()) {
+		mPhone->highlight(true);
+		mMonitor->highlight(false);
+		object = mPhone;
+	} else if (mMonitor->canUse()) {
+		mMonitor->highlight(true);
+		mPhone->highlight(false);
+		object = mMonitor;
+	}
+	mCharacter->setUsableObject(object);
 
 	//mCharacter->setMove(!mControlCenter->intersects(mCharacter->getBoundingBox()));
 

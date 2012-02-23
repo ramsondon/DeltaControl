@@ -19,6 +19,7 @@ Filename:    DeltaControl.h
 class DeltaControl : public BaseApplication
 {
 private:
+
 	ControlCenter* mControlCenter;
 	Telephone* mPhone;
 	Table* mTable;
