@@ -6,11 +6,13 @@
  */
 
 #include "UsableObject.h"
+#include "Observer.h"
 
 UsableObject::UsableObject(Ogre::SceneManager* sceneMgr, CharacterController* cController)
 	: GameObject(sceneMgr),
 	  mSceneMgr(sceneMgr),
-	  mCharacterController(cController)
+	  mCharacterController(cController),
+	  mObserver(0)
 	  {
 }
 
@@ -23,5 +25,16 @@ bool UsableObject::canUse()
 }
 
 void UsableObject::use() {
-	// to be overriden
+
+	if (mObserver != NULL) {
+		mObserver->notify();
+	}
+}
+
+void UsableObject::unuse() {
+	// Do nothing
+}
+
+void UsableObject::setObserver(Observer* observer) {
+	mObserver = observer;
 }

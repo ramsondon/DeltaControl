@@ -54,3 +54,7 @@ bool Monitor::canUse() {
 void Monitor::use() {
 	LogManager::getSingleton().logMessage("use MONITOR");
 }
+
+void Monitor::unuse() {
+	highlight(false);
+}

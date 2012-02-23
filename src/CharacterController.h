@@ -95,6 +95,7 @@ public:
 	bool canMove();
 	void setUsableObject(UsableObject* object);
 
+
 private:
 	void setupAnimations();
 	void setupBody(SceneManager* sceneMgr);

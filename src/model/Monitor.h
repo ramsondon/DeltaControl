@@ -30,6 +30,7 @@ public:
 	void highlight(bool highlight);
 	virtual bool canUse();
 	virtual void use();
+	virtual void unuse();
 };
 
 #endif /* MONITOR_H_ */

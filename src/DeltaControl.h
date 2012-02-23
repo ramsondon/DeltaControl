@@ -31,6 +31,7 @@ public:
 
 protected:
     virtual void createScene(void);
+    void createFrameListener(void);
     bool frameRenderingQueued(const Ogre::FrameEvent& evt);
 
 };

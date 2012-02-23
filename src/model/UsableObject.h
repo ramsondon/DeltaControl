@@ -14,6 +14,7 @@
 #include "../CharacterController.h"
 #include "GameObject.h"
 
+class Observer;
 
 class UsableObject : public GameObject {
 
@@ -23,12 +24,22 @@ protected:
 	Ogre::SceneManager* mSceneMgr;
 	CharacterController* mCharacterController;
 
+	Observer* mObserver;
+
 public:
 	UsableObject(Ogre::SceneManager* sceneMgr, CharacterController* cController);
 	virtual ~UsableObject();
 
 	virtual bool canUse();
+
+	/*
+	 * calls notify to the registered Observer
+	 */
 	virtual void use();
+
+	virtual void unuse();
+
+	void setObserver(Observer* observable);
 };
 
 #endif /* USABLEOBJECT_H_ */

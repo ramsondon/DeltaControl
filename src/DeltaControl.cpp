@@ -51,17 +51,24 @@ void DeltaControl::createScene(void) {
 	pointLight->setSpecularColour(0.95, 0.95, 0.95);
 }
 
+void DeltaControl::createFrameListener(void) {
+	BaseApplication::createFrameListener();
+
+	mPhone->setTrayManager(mTrayMgr);
+}
+
+
 bool DeltaControl::frameRenderingQueued(const Ogre::FrameEvent& evt) {
 
 	bool ret = BaseApplication::frameRenderingQueued(evt);
 	UsableObject* object = NULL;
 	if (mPhone->canUse()) {
 		mPhone->highlight(true);
-		mMonitor->highlight(false);
+		mMonitor->unuse();
 		object = mPhone;
 	} else if (mMonitor->canUse()) {
 		mMonitor->highlight(true);
-		mPhone->highlight(false);
+		mPhone->unuse();
 		object = mMonitor;
 	}
 	mCharacter->setUsableObject(object);

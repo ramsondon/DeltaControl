@@ -10,7 +10,9 @@ material floor
 			{
 				texture wood.jpg
 			}
+			ambient 0.0 0.0 0.0
 			diffuse 0.35 0.38 0.41 1.00
+			specular 1 1 1 0.988
 		}
 	}
 }
@@ -27,7 +29,9 @@ material pillar
 				texture RustySteel.jpg
 				scale 4.5 0.5
 			}
+			ambient 0.0 0.0 0.0
 			diffuse 0.35 0.38 0.41 1.00
+			specular 1 1 1 0.988
 		}
 	}
 }
@@ -66,7 +70,9 @@ material wall_light_grey
 				texture kamen.jpg
 				scale 4 3
 			}
+			ambient 0.0 0.0 0.0
 			diffuse 0.35 0.38 0.41 1.00
+			specular 1 1 1 0.988
 		}
 	}
 }
@@ -83,7 +89,9 @@ material wall_window
 				texture kamen.jpg
 				scale 0.1 1
 			}
+			ambient 0.0 0.0 0.0
 			diffuse 0.35 0.38 0.41 1.00
+			specular 1 1 1 0.988
 		}
 	}
 }
@@ -99,7 +107,9 @@ material roof_white
 			{
 				texture roof.jpg
 			}
+			ambient 0.0 0.0 0.0
 			diffuse 0.35 0.38 0.41 1.00
+			specular 1 1 1 0.988
 		}
 	}
 }
