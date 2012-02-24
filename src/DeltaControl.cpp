@@ -64,12 +64,15 @@ bool DeltaControl::frameRenderingQueued(const Ogre::FrameEvent& evt) {
 	UsableObject* object = NULL;
 	if (mPhone->canUse()) {
 		mPhone->highlight(true);
-		mMonitor->unuse();
+		mMonitor->highlight(false);
 		object = mPhone;
 	} else if (mMonitor->canUse()) {
 		mMonitor->highlight(true);
-		mPhone->unuse();
+		mPhone->highlight(false);
 		object = mMonitor;
+	} else {
+		mPhone->highlight(false);
+		mMonitor->highlight(false);
 	}
 	mCharacter->setUsableObject(object);
 
