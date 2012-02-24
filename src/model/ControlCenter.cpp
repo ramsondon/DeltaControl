@@ -14,11 +14,8 @@
 
 
 ControlCenter::ControlCenter(Ogre::SceneManager* sceneMgr) {
-
 	mSceneMgr = sceneMgr;
 	setup();
-
-
 }
 
 ControlCenter::~ControlCenter() {

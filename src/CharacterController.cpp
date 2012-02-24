@@ -54,32 +54,7 @@ void CharacterController::setupBody(SceneManager* sceneMgr) {
 	mMove = true;
 
 	// scale to fit
-	mBodyNode->scale(0, CHAR_SCALE_Y, 0);
-
-	// create swords and attach to sheath
-	mSword1 = sceneMgr->createEntity("SinbadSword1", "Sword.mesh");
-	mSword2 = sceneMgr->createEntity("SinbadSword2", "Sword.mesh");
-	mBodyEnt->attachObjectToBone("Sheath.L", mSword1);
-	mBodyEnt->attachObjectToBone("Sheath.R", mSword2);
-
-	// create a couple of ribbon trails for the swords, just for fun
-	NameValuePairList params;
-	params["numberOfChains"] = "2";
-	params["maxElements"] = "80";
-	mSwordTrail = (RibbonTrail*)sceneMgr->createMovableObject("RibbonTrail", &params);
-	mSwordTrail->setMaterialName("Examples/LightRibbonTrail");
-	mSwordTrail->setTrailLength(20);
-	mSwordTrail->setVisible(false);
-	sceneMgr->getRootSceneNode()->attachObject(mSwordTrail);
-
-
-	for (int i = 0; i < 2; i++)
-	{
-		mSwordTrail->setInitialColour(i, 1, 0.8, 0);
-		mSwordTrail->setColourChange(i, 0.75, 1.25, 1.25, 1.25);
-		mSwordTrail->setWidthChange(i, 1);
-		mSwordTrail->setInitialWidth(i, 0.5);
-	}
+	mBodyNode->scale(CHAR_SCALE_X, CHAR_SCALE_Y, CHAR_SCALE_Z);
 
 	mKeyDirection = Vector3::ZERO;
 	mVerticalVelocity = 0;
@@ -92,7 +67,9 @@ void CharacterController::setupBody(SceneManager* sceneMgr) {
 	baseAnim->setLoop(true);
 	topAnim->setLoop(true);
 	baseAnim->setEnabled(true);
-	topAnim->setEnabled(true); 
+	topAnim->setEnabled(true);
+
+	mBodyNode->setVisible(false, true);
 }
 
 void CharacterController::setupAnimations() {
@@ -273,25 +250,9 @@ void CharacterController::updateAnimations(Real deltaTime)
 		{
 			// so transfer the swords from the sheaths to the hands
 			mBodyEnt->detachAllObjectsFromBone();
-			mBodyEnt->attachObjectToBone(mSwordsDrawn ? "Sheath.L" : "Handle.L", mSword1);
-			mBodyEnt->attachObjectToBone(mSwordsDrawn ? "Sheath.R" : "Handle.R", mSword2);
 			// change the hand state to grab or let go
 			mAnims[ANIM_HANDS_CLOSED]->setEnabled(!mSwordsDrawn);
 			mAnims[ANIM_HANDS_RELAXED]->setEnabled(mSwordsDrawn);
-
-			// toggle sword trails
-			if (mSwordsDrawn)
-			{
-				mSwordTrail->setVisible(false);
-				mSwordTrail->removeNode(mSword1->getParentNode());
-				mSwordTrail->removeNode(mSword2->getParentNode());
-			}
-			else
-			{
-				mSwordTrail->setVisible(true);
-				mSwordTrail->addNode(mSword1->getParentNode());
-				mSwordTrail->addNode(mSword2->getParentNode());
-			}
 		}
 
 		if (mTimer >= mAnims[mTopAnimID]->getLength())

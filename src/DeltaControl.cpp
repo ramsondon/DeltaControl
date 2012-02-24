@@ -45,7 +45,7 @@ void DeltaControl::createScene(void) {
 
 	Ogre::Light* pointLight = mSceneMgr->createLight("pointLight");
 	pointLight->setType(Ogre::Light::LT_POINT);
-	pointLight->setPosition(Ogre::Vector3(0, 150, 250));
+	pointLight->setPosition(Ogre::Vector3(0, ROOM_HEIGHT, 250));
 
 	pointLight->setDiffuseColour(0.95, 0.95, 0.95);
 	pointLight->setSpecularColour(0.95, 0.95, 0.95);
