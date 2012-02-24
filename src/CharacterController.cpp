@@ -30,7 +30,7 @@ void CharacterController::setupCamera(Camera* cam) {
 	
 	// this is where the camera actually is
 	mCameraNode = cam->getSceneManager()->getRootSceneNode()->createChildSceneNode();
-	mCameraNode->setPosition(mCameraPivot->getPosition() + mCameraGoal->getPosition());
+	mCameraNode->setPosition(mCameraPivot->getPosition()); // + mCameraGoal->getPosition());
 
 	mCameraPivot->setFixedYawAxis(true);
 	mCameraGoal->setFixedYawAxis(true);
@@ -54,7 +54,7 @@ void CharacterController::setupBody(SceneManager* sceneMgr) {
 	mMove = true;
 
 	// scale to fit
-	mBodyNode->scale(CHAR_SCALE_X, CHAR_SCALE_Y, CHAR_SCALE_Z);
+	mBodyNode->scale(0, CHAR_SCALE_Y, 0);
 
 	// create swords and attach to sheath
 	mSword1 = sceneMgr->createEntity("SinbadSword1", "Sword.mesh");
@@ -386,7 +386,7 @@ void CharacterController::fadeAnimations(Real deltaTime)
 void CharacterController::updateCamera(Real deltaTime)
 {
 	// place the camera pivot roughly at the character's shoulder
-	mCameraPivot->setPosition(mBodyNode->getPosition() + Vector3::UNIT_Y * CAM_HEIGHT - Vector3::UNIT_X * 20);
+	mCameraPivot->setPosition(mBodyNode->getPosition() + Vector3::UNIT_X * 20);
 	// move the camera smoothly to the goal
 	Vector3 goalOffset = mCameraGoal->_getDerivedPosition() - mCameraNode->getPosition();
 	mCameraNode->translate(goalOffset * deltaTime * 9.0f);

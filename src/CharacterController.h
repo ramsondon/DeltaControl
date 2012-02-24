@@ -14,14 +14,14 @@
 #include <OIS.h>
 
 #define NUM_ANIMS 13           // number of animations the character has
-#define CHAR_HEIGHT 50          // height of character's center of mass above ground
+#define CHAR_HEIGHT 80          // height of character's center of mass above ground
 #define CAM_HEIGHT 20           // height of camera above character's center of mass
 #define RUN_SPEED 150          // character running speed in units per second
 #define TURN_SPEED 700.0f      // character turning in degrees per second
 #define ANIM_FADE_SPEED 7.5f   // animation crossfade speed in % of full weight per second
 #define JUMP_ACCEL 30.0f       // character jump acceleration in upward units per squared second
 #define GRAVITY 90.0f          // gravity in downward units per squared second
-#define CHAR_SCALE_X 10
+#define CHAR_SCALE_X 15
 #define CHAR_SCALE_Y CHAR_SCALE_X
 #define CHAR_SCALE_Z CHAR_SCALE_X
 

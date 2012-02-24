@@ -40,7 +40,7 @@ void DeltaControl::createScene(void) {
 
 
 	// set lightning
-	mSceneMgr->setAmbientLight(Ogre::ColourValue(0.1,0.1,0.1));
+	mSceneMgr->setAmbientLight(Ogre::ColourValue(0.2,0.2,0.2));
 	mSceneMgr->setShadowTechnique(Ogre::SHADOWTYPE_STENCIL_ADDITIVE);
 
 	Ogre::Light* pointLight = mSceneMgr->createLight("pointLight");

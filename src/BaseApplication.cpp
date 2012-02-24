@@ -97,8 +97,8 @@ void BaseApplication::createFrameListener(void) {
 
 	mTrayMgr = new OgreBites::SdkTrayManager("InterfaceName", mWindow, mMouse,
 			this);
-	mTrayMgr->showFrameStats(OgreBites::TL_BOTTOMLEFT);
-	mTrayMgr->showLogo(OgreBites::TL_BOTTOMRIGHT);
+	//mTrayMgr->showFrameStats(OgreBites::TL_BOTTOMLEFT);
+	//mTrayMgr->showLogo(OgreBites::TL_BOTTOMRIGHT);
 	mTrayMgr->hideCursor();
 
 	// create a params panel for displaying sample details
