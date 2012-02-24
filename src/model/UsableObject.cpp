@@ -19,6 +19,11 @@ UsableObject::UsableObject(Ogre::SceneManager* sceneMgr, CharacterController* cC
 UsableObject::~UsableObject() {
 }
 
+bool UsableObject::isUsing()
+{
+	return mIsUsing;
+}
+
 bool UsableObject::canUse()
 {
 	return mEntity->getWorldBoundingBox().intersects(mCharacterController->getBoundingBox());
@@ -26,13 +31,14 @@ bool UsableObject::canUse()
 
 void UsableObject::use() {
 
+	mIsUsing = true;
 	if (mObserver != NULL) {
 		mObserver->notify();
 	}
 }
 
 void UsableObject::unuse() {
-	// Do nothing
+	mIsUsing = false;
 }
 
 void UsableObject::setObserver(Observer* observer) {

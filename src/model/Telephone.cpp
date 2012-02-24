@@ -49,7 +49,10 @@ void Telephone::use() {
 }
 
 void Telephone::unuse() {
-	highlight(false);
+	UsableObject::unuse();
+
+	mTrayMgr->hideCursor();
+	mTrayMgr->destroyAllWidgetsInTray(OgreBites::TL_CENTER);
 }
 
 void Telephone::createAndShow() {
@@ -77,8 +80,8 @@ void Telephone::createAndShow() {
 }
 
 void Telephone::buttonHit(OgreBites::Button* button) {
+
 	SdkTrayListener::buttonHit(button);
-	mTrayMgr->hideCursor();
-	mTrayMgr->destroyAllWidgetsInTray(OgreBites::TL_CENTER);
+	this->unuse();
 }
 

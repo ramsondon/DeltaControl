@@ -19,6 +19,7 @@ class Observer;
 class UsableObject : public GameObject {
 
 protected:
+	bool mIsUsing;
 	Ogre::Entity* mEntity;
 	Ogre::SceneNode* mSceneNode;
 	Ogre::SceneManager* mSceneMgr;
@@ -31,6 +32,8 @@ public:
 	virtual ~UsableObject();
 
 	virtual bool canUse();
+
+	bool isUsing();
 
 	/*
 	 * calls notify to the registered Observer

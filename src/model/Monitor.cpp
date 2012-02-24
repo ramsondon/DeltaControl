@@ -56,5 +56,6 @@ void Monitor::use() {
 }
 
 void Monitor::unuse() {
-	highlight(false);
+	UsableObject::unuse();
+
 }

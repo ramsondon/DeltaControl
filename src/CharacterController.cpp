@@ -124,7 +124,11 @@ void CharacterController::injectKeyDown(const OIS::KeyEvent& evt)
 
 	else if (evt.key == OIS::KC_E && mCurUsableObject != NULL)
 	{
-		mCurUsableObject->use();
+		if (!mCurUsableObject->isUsing()) {
+			mCurUsableObject->use();
+		} else {
+			mCurUsableObject->unuse();
+		}
 	}
 	else if (evt.key == OIS::KC_SPACE && (mTopAnimID == ANIM_IDLE_TOP || mTopAnimID == ANIM_RUN_TOP))
 	{
